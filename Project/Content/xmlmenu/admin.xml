@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!--Created on 9/4/2008 4:52:49 PM-->
+<menu absolutePosition="auto" mode="popup" maxItems="25" menuAlign="left" withoutImages="true">
+          <MenuItem name="Admin Users Management" id="10" href="" tooltip="Admin Users Management" withoutImages="true" src="">
+                    <MenuItem name="Add New Admin User" id="11" href="add-admin-user.aspx" tooltip="Add New Admin User" withoutImages="true" src="" />
+                    <MenuItem name="Manage Admin Users" id="12" href="manage-admin-users.aspx" tooltip="Manage Admin Users" withoutImages="true" src="" />
+          </MenuItem>
+		     <MenuItem name="Users Management" id="20" href="" tooltip="Users Management" withoutImages="true" src="">
+                    <MenuItem name="Add New User" id="21" href="add-user.aspx" tooltip="Add New User" withoutImages="true" src="" />
+                    <MenuItem name="Manage Users" id="22" href="manage-users.aspx" tooltip="Manage Users" withoutImages="true" src="" />
+          </MenuItem>
+  <MenuItem name="Company Management" id="30" href="" tooltip="Company Management" withoutImages="true" src="">
+    <MenuItem name="Add Company" id="31" href="add-company.aspx" tooltip="Add Company" withoutImages="true" src="" />
+    <MenuItem name="Manage Companies" id="32" href="manage-Companies.aspx" tooltip="Manage Companies" withoutImages="true" src="" />
+  </MenuItem>
+  <MenuItem name="Industry Management" id="40" href="" tooltip="Industry Management" withoutImages="true" src="">
+    <MenuItem name="Add Industry" id="41" href="add-industry.aspx" tooltip="Add Industry" withoutImages="true" src="" />
+    <MenuItem name="Manage Industries" id="42" href="manage-Industries.aspx" tooltip="Manage Industries" withoutImages="true" src="" />
+  </MenuItem>
+  <MenuItem name="Library Management" id="50" href="" tooltip="Library Management" withoutImages="true" src="">
+  		<MenuItem name="Library Category" id="51" href="" tooltip="Library Category" withoutImages="true" src="">
+			<MenuItem name="Add Library Category" id="52" href="add-library-category.aspx" tooltip="Add Library Category" withoutImages="true" src="" />
+			<MenuItem name="Manage Library Categories" id="53" href="manage-library-categories.aspx" tooltip="Manage Library Categories" withoutImages="true" src="" />
+		</MenuItem>
+		<MenuItem name="Library Data" id="54" href="" tooltip="Library Data" withoutImages="true" src="">
+			<MenuItem name="Add Library Data" id="55" href="add-library-data.aspx" tooltip="Add Library Data" withoutImages="true" src="" />
+			<MenuItem name="Manage Library Data" id="56" href="manage-library-data.aspx" tooltip="Manage Library Data" withoutImages="true" src="" />			
+		</MenuItem>
+		<MenuItem name="Import Library" id="57"  href="import-library-data.aspx" tooltip="Import Library" withoutImages="true" src="" />
+  </MenuItem>
+  <MenuItem name="Weekly Tips" id="60" href="" tooltip="Weekly Tips Management" withoutImages="true" src="">
+    <MenuItem name="Add New Tip" id="61" href="add-weekly-tip.aspx" tooltip="Add New Tip" withoutImages="true" src="" />
+    <MenuItem name="Manage Tips" id="62" href="manage-weekly-tip.aspx" tooltip="Manage Tips" withoutImages="true" src="" />
+  </MenuItem>
+  <MenuItem name="Fan Friday" id="70" href="" tooltip="Fan Friday Management" withoutImages="true" src="">
+    <MenuItem name="Add Fan Friday" id="71" href="add-fan-friday.aspx" tooltip="Add New Fan Friday" withoutImages="true" src="" />
+    <MenuItem name="Manage Fan Friday" id="72" href="manage-fan-friday.aspx" tooltip="Manage Fan Friday" withoutImages="true" src="" />
+  </MenuItem>
+   <MenuItem name="Logging of Activity" id="80" href="" tooltip="Logging of Activity" withoutImages="true" src="">
+    <MenuItem name="Manage Autopost" id="81" href="manage-autopost.aspx" tooltip="Manage Autopost" withoutImages="true" src="" />
+    <MenuItem name="Manage Quick Post" id="82" href="manage-quickpost.aspx" tooltip="Manage Quick Post" withoutImages="true" src="" />
+	<MenuItem name="Manage Scheduled Post" id="83" href="manage-schedulepost.aspx" tooltip="Manage Scheduled Post" withoutImages="true" src="" />
+    <MenuItem name="Manage Posts with Images" id="84" href="manage-imagepost.aspx" tooltip="Manage Posts with Images" withoutImages="true" src="" />
+	 <MenuItem name="Manage Posts with Videos" id="85" href="manage-videopost.aspx" tooltip="Manage Posts with Videos" withoutImages="true" src="" />
+	 <MenuItem name="Manage Posts with Text" id="86" href="manage-textpost.aspx" tooltip="Manage Posts with Text" withoutImages="true" src="" />
+	 <MenuItem name="Manage Posts with Links" id="87" href="manage-linkpost.aspx" tooltip="Manage Posts with Links" withoutImages="true" src="" />
+	  <MenuItem name="Manage Published Sidebar" id="88" href="manage-published-sidebar.aspx" tooltip="Manage Published Sidebar" withoutImages="true" src="" />
+	 <MenuItem name="Manage Saved Sidebar" id="89" href="manage-saved-sidebar.aspx" tooltip="Manage Saved Sidebar" withoutImages="true" src="" />
+	  <MenuItem name="Manage Published Custom Tab" id="90" href="manage-published-customtab.aspx" tooltip="Manage Published Custom Tab" withoutImages="true" src="" />
+	 <MenuItem name="Manage Saved Custom Tab" id="91" href="manage-saved-customtab.aspx" tooltip="Manage Saved Custom Tab" withoutImages="true" src="" />
+	 <MenuItem name="Manage Published Sweepstake" id="92" href="manage-published-sweepstake.aspx" tooltip="Manage Published Sweepstake" withoutImages="true" src="" />
+  </MenuItem>
+  
+   <MenuItem name="Video Management" id="93" href="" tooltip="Video Management" withoutImages="true" src="">
+    <MenuItem name="Add/View/Edit/Delete Video" id="94" href="manage-video.aspx" tooltip="Add/View/Edit/Delete Video" withoutImages="true" src="" />
+  </MenuItem>
+         <!-- <MenuItem name="Content Management" id="2" href="" tooltip="Content Management" withoutImages="true" src="">
+                    <MenuItem name="Home Page" id="3" href="cms.aspx?id=1" tooltip="Home Page" withoutImages="true" src="" />
+                    <MenuItem name="Email Notification" id="4" href="cms.aspx?id=2" tooltip="Email Notification" withoutImages="true" src="" />
+                    <MenuItem name="Downloads Instructions" id="5" href="cms.aspx?id=3" tooltip="Downloads Instructions" withoutImages="true" src="" />
+                    <MenuItem name="Registrations Unlocks" id="6" href="cms.aspx?id=4" tooltip="Registrations Unlocks" withoutImages="true" src="" />
+                    <MenuItem name="Gift Certificate Notice" id="7" href="cms.aspx?id=5" tooltip="Gift Certificate Notice" withoutImages="true" src="" />
+                    <MenuItem name="Order Confirmation" id="8" href="cms.aspx?id=6" tooltip="Order Confirmation" withoutImages="true" src="" />
+                    <MenuItem name="Download Products" id="9" href="cms.aspx?id=7" tooltip="Download Products" withoutImages="true" src="" />
+                    <MenuItem name="Product Unlocks" id="10" href="cms.aspx?id=8" tooltip="Product Unlocks" withoutImages="true" src="" />
+                    <MenuItem name="Product Registration Home Page" id="11" href="cms.aspx?id=9" tooltip="Product Registration Home Page" withoutImages="true" src="" />
+                    <MenuItem name="Product Registration Confirmation" id="12" href="cms.aspx?id=10" tooltip="Product Registration Confirmation" withoutImages="true" src="" />
+                    <MenuItem name="Email Management" id="13" href="view-email-address.aspx" tooltip="Email Management" withoutImages="true" src="" />
+                    <MenuItem name="Password Changed Message" id="14" href="cms.aspx?id=11" tooltip="Password Changed Message" withoutImages="true" src="" />
+                    <MenuItem name="Problem Submission Form- Thank" id="15" href="cms.aspx?id=12" tooltip="Problem Submission Form- Thanks Page" withoutImages="true" src="" />
+                    <MenuItem name="Problem Submission Form- Mail " id="16" href="cms.aspx?id=13" tooltip="Problem Submission Form- Mail Message" withoutImages="true" src="" />
+                    <MenuItem name="Why FormTool" id="94" href="why-formtool.aspx" tooltip="Why FormTool" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Communication" id="17" href="" tooltip="Communication" withoutImages="true" src="">
+                    <MenuItem name="About Us" id="18" href="cms.aspx?Id=14" tooltip="About Us Page" withoutImages="true" src="" />
+                    <MenuItem name="Sign-Up" id="19" href="cms.aspx?Id=15" tooltip="Signup Page" withoutImages="true" src="" />
+                    <MenuItem name="Contact Us" id="20" href="cms.aspx?Id=16" tooltip="Contactus Page" withoutImages="true" src="" />
+                    <MenuItem name="Investor Relations" id="21" href="cms.aspx?Id=17" tooltip="Investor Relations" withoutImages="true" src="" />
+                    <MenuItem name="Press Room" id="22" href="press-view.aspx" tooltip="Press Room" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Product / Book Management" id="24" href="" tooltip="Product / Book Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Add Products" id="25" href="view-products.aspx" tooltip="View/Edit/Add Products" withoutImages="true" src="" />
+                    <MenuItem name="Add/Edit Download Updates" id="26" href="view-dwn-updates.aspx" tooltip="Add/Edit Download Updates" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Book Platform" id="27" href="view-book-platforms.aspx" tooltip="View/Edit/Add Book Platform" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Books" id="28" href="view-books.aspx" tooltip="View/Edit/Add Books" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Product Peripherals " id="29" href="default.aspx" tooltip="Product Peripherals " withoutImages="true" src="">
+                    <MenuItem name="Additional Product Info" id="80" href="add-product-info.aspx" tooltip="Additional Product Info" withoutImages="true" src="" />
+                    <MenuItem name="Online Tutorials" id="30" href="online-tutorial.aspx" tooltip="Online Tutorials" withoutImages="true" src="" />
+                    <MenuItem name="Product Reviews" id="31" href="product-reviews.aspx" tooltip="Product Reviews" withoutImages="true" src="" />
+                    <MenuItem name="Customer Testimonials" id="32" href="cust-testimonials.aspx" tooltip="Customer Testimonials" withoutImages="true" src="" />
+                    <MenuItem name="Product Comparison" id="33" href="view-charts.aspx" tooltip="Product Comparison" withoutImages="true" src="" />
+                    <MenuItem name="Add Chart" id="34" href="add-charts.aspx" tooltip="Add Chart" withoutImages="true" src="" />
+                    <MenuItem name="Tips / Tricks" id="35" href="view-tips.aspx" tooltip="Tips / Tricks" withoutImages="true" src="" />
+                    <MenuItem name="Products FAQ's" id="36" href="view-faq.aspx" tooltip="Products FAQ's" withoutImages="true" src="" />
+                    <MenuItem name="Map Screen shots" id="37" href="map-screen-shots.aspx" tooltip="Map Screen shots" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Upgrade Management" id="38" href="" tooltip="Upgrade Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Add Upgrade Master" id="39" href="view-upgrade-master.aspx" tooltip="View/Edit/Add Upgrade Master" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Upgrades" id="40" href="view-upgrade.aspx" tooltip="View/Edit/Add Upgrades" withoutImages="true" src="" />
+                    <MenuItem name="Map Upgrades" id="41" href="map-upgrade.aspx" tooltip="Map Upgrades" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Category Management" id="42" href="" tooltip="Category Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Add Product Category" id="43" href="view-categories.aspx" tooltip="View/Edit/Add Product Category" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Book Category" id="44" href="view-book-categories.aspx" tooltip="View/Edit/Add Book Category" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Customer Management" id="45" href="" tooltip="Customer Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit Customers" id="46" href="view-customers.aspx" tooltip="View/Edit Customers" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Delivery Method" id="47" href="" tooltip="Delivery Method" withoutImages="true" src="">
+                    <MenuItem name="View/Edit Delivery Method" id="48" href="view-delivery-methods.aspx" tooltip="View/Edit Delivery Method" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Featured Products" id="49" href="" tooltip="Feature Products" withoutImages="true" src="">
+                    <MenuItem name="Best Sellers" id="50" href="view-best-sellers.aspx" tooltip="Best Sellers" withoutImages="true" src="" />
+                    <MenuItem name="Home Featured Products" id="51" href="view-featured-home.aspx" tooltip="Home Featured Products" withoutImages="true" src="" />
+                    <MenuItem name="View/Add Featured Products" id="52" href="view-featured-product.aspx" tooltip="View/Add Featured Products" withoutImages="true" src="" />
+                    <MenuItem name="View/Add Featured Books" id="53" href="view-featured-books.aspx" tooltip="View/Add Featured Books" withoutImages="true" src="" />
+                    <MenuItem name="Specials" id="54" href="view-specials.aspx" tooltip="Specials" withoutImages="true" src="" />
+                    <MenuItem name="Signup" id="55" href="setup-signupbox.aspx" tooltip="Signup" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Order Management" id="56" href="" tooltip="Order Management" withoutImages="true" src="">
+                    <MenuItem name="View Orders" id="57" href="view-orders.aspx" tooltip="View Orders" withoutImages="true" src="" />
+                    <MenuItem name="View Registrations" id="58" href="view-registrations.aspx" tooltip="View Registrations" withoutImages="true" src="" />
+                    <MenuItem name="Priority Code" id="59" href="view-priority.aspx" tooltip="Priority Code" withoutImages="true" src="" />
+                    <MenuItem name="Revert Order Status" id="60" href="revert-orders.aspx" tooltip="Revert Order Status" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Shipping Management" id="61" href="" tooltip="Shipping Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Add Ship Types" id="62" href="ship-types.aspx" tooltip="View/Edit/Add Ship Types" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Sales Tax Management" id="63" href="" tooltip="Sales Tax Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit Sales Tax" id="64" href="manage-sales-tax.aspx" tooltip="View/Edit Sales Tax" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Support Management" id="65" href="" tooltip="Support Management" withoutImages="true" src="">
+                    <MenuItem name="View Uncontacted List" id="66" href="view-uncontact-list.aspx" tooltip="View Uncontacted List" withoutImages="true" src="" />
+                    <MenuItem name="View Past/Contacted List" id="67" href="view-contact-list.aspx" tooltip="View Past/Contacted List" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Banner Management" id="68" href="" tooltip="Banner Management" withoutImages="true" src="">
+                    <MenuItem name="View Banners" id="69" href="manage-banners.aspx" tooltip="View Banners" withoutImages="true" src="" />
+                    <MenuItem name="View Banner Statistics" id="70" href="manage-banner-statistics.aspx" tooltip="View Banner Statistics" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Export Management" id="71" href="" tooltip="Export Management" withoutImages="true" src="">
+                    <MenuItem name="Orders" id="72" href="export-orders.aspx" tooltip="Orders" withoutImages="true" src="" />
+                    <MenuItem name="Registrations" id="73" href="export-reg.aspx" tooltip="Registrations" withoutImages="true" src="" />
+                    <MenuItem name="Sign-Up" id="74" href="export-signup.aspx" tooltip="Sign-Up" withoutImages="true" src="" />
+                    <MenuItem name="List Defaults" id="75" href="export-defaults.aspx" tooltip="List Defaults" withoutImages="true" src="" />
+                    <MenuItem name="Unlock Codes" id="98" href="unlockcode.aspx" tooltip="Unlock Codes" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Form Management" id="82" href="" tooltip="Manage Forms" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Add Form Category" id="81" href="view-form-categories.aspx" tooltip="View/Edit/Add Form Category" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Form Editions" id="83" href="view-editions.aspx" tooltip="View/Edit/Add Form Editions" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Form Packs" id="84" href="view-packs.aspx" tooltip="View/Edit/Add Form Packs" withoutImages="true" src="" />
+                    <MenuItem name="View/Edit/Add Forms" id="85" href="view-forms.aspx" tooltip="View/Edit/Add Forms" withoutImages="true" src="" />
+                    <MenuItem name="Best Sellers" id="87" href="view-form-best-sellers.aspx" tooltip="Best Sellers" withoutImages="true" src="" />
+                    <MenuItem name="Specials" id="86" href="view-form-specials.aspx" tooltip="Specials" withoutImages="true" src="" />
+                    <MenuItem name="Manage Home Page Buttons" id="96" href="homepagebuttons.aspx" tooltip="Manage Home Page Buttons" withoutImages="true" src="" />
+                    <MenuItem name="Set Form SKU" id="97" href="edit-form-sku.aspx" tooltip="Set Form SKU" withoutImages="true" src="" />
+          </MenuItem>
+          <MenuItem name="Menu Management" id="76" href="" tooltip="Menu Management" withoutImages="true" src="">
+                    <MenuItem name="View/Edit/Delete Menu" id="77" href="manage-menu.aspx" tooltip="View/Edit/Delete Menu" withoutImages="true" src="" />
+          </MenuItem>
+--></menu>

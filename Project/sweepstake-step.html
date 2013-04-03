@@ -1,0 +1,141 @@
+<link  href="../Content/css/site.css" rel="stylesheet" type="text/css" />
+<div style="float:left; background-color:#f3f3f3; border-top:#dedee1 2px solid; border-bottom:#dedee1 2px solid; width:607px;
+ height:43px; position:relative;">
+    <div class="likeactive">
+    	<div style="">
+        <font color="#FFFFFF">1</font>
+        <font color="#687faf">&nbsp;&nbsp;&nbsp;&nbsp;Before Visitor Like Your Page</font>
+        </div>
+     </div>   
+    <!--<div align="center" style=" 
+     width:223px;background-image:url(Content/images/sweepstakes_step_hover.png);background-repeat:no-repeat; height:24px; 
+      margin-top:8px; margin-left:10px; float:left; text-align:center;">
+    	<div style="margin-left:-1px; margin-top:2px;font-family:Arial, Helvetica, sans-serif; font-size:12px;">
+        <font color="#FFFFFF">1</font>
+        <font color="#687faf">&nbsp;&nbsp;Before Visitor Like Your Page</font>
+        </div>-->
+ <div class="likedeactive">
+    	<div style="" >
+        <font color="#FFFFFF">2</font>
+        <font color="#dedee1">&nbsp;&nbsp;&nbsp;&nbsp;After Visitor Like Your Page</font>
+        </div>
+     </div>   
+  <div class="likedeactive">
+    	<div style="">
+        <font color="#FFFFFF">3</font>
+        <font color="#dedee1">&nbsp;&nbsp;&nbsp;&nbsp;Share and Email Settings</font>
+        </div>
+   </div>   
+</div>
+<div style="width:607px; height:30px; float:left; position:relative; ">
+<div id="divSaveLike" style=" display:none; margin:8px;">
+                     <div style="float:right; position:relative; float:left; position:relative; text-align:left;">
+                     <a href="javascript:;" runat="server" id="lnkSavelikePrevious" style="text-decoration:none; color:#dedee1;" 
+                    onclick="return SaveLikeUnlike(1);"><img src="Content/images/sweepstakes_step_previous_arrow.png" border="0" width="5" height="7"> Previous</a></div>
+                    <div style="float:right; position:relative; float:right; position:relative; text-align:left">
+                    <a href="javascript:;" runat="server" id="lnkSavelikeNext" 
+                    onclick="return SaveLikeUnlike(3);" style="text-decoration:none;">Next <img src="Content/images/sweepstakes_step_next_arrow.png" border="0" width="5" height="7"></a>
+                    </div>
+</div>
+                    <div id="divSaveUnLike" style="float:right; margin:8px; position:relative; float:right; position:relative; text-align:left">
+                    <a href="javascript:;" runat="server" 
+                    id="lnkSaveUnlikeNext"  style="text-decoration:none; color:#687faf;"
+                    onclick="return SaveLikeUnlike(2);">Next  <img src="Content/images/sweepstakes_step_next_arrow.png" border="0" width="5" height="7"></a></div>
+                    <div id="divSaveShare" style="float:right; margin:8px; position:relative; float:right; position:relative; text-align:left; display:none"><a href="javascript:;" runat="server" 
+                    id="lnkSaveShare" 
+                    onclick="return SaveLikeUnlike(2);" style="text-decoration:none; color:#dedee1;"> <img src="Content/images/sweepstakes_step_previous_arrow.png" border="0" width="5" height="7"> Previous</a></div>
+</div>
+
+
+
+
+   <!--<div id="divSaveLike" style="float:right; position:relative; display:none; background-color:#FF0000;">
+                     <div><a href="javascript:;" runat="server" id="lnkSavelikePrevious" 
+                    onclick="return SaveLikeUnlike(1);">Previous</a></div>
+                    <div><a href="javascript:;" runat="server" id="lnkSavelikeNext" 
+                    onclick="return SaveLikeUnlike(3);">Next</a>
+                    </div>
+                    </div>
+                    <div id="divSaveUnLike"style="float:right; position:relative;  background-color:#FF0000;"><a href="javascript:;" runat="server" 
+                    id="lnkSaveUnlikeNext" 
+                    onclick="return SaveLikeUnlike(2);">Next</a></div>
+                    <div id="divSaveShare"style="float:right; background-color:#FF0000; position:relative; display:none"><a href="javascript:;" runat="server" 
+                    id="lnkSaveShare" 
+                    onclick="return SaveLikeUnlike(2);">Previous</a></div>-->
+                    
+<div id="CustomiseUserMessages" style="display:; width:670px; float:left; height:450px; padding-left:60px; border:0px solid #ff0000;">
+			  
+			  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center" valign="top">
+
+                  </td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top" style="padding:13px; padding-bottom:16px; padding-right:0px;"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr bordercolor="#cccccc;" style="height:25px;">
+                        <td valign="middle" style="display:none"><b>Save Customise Sweepstakes Details</b> </td>
+                        <td align="right" valign="middle" style="display:none"><a href="javascript:;" onclick="CloseCustomiseUser();">[Close]</a>&nbsp;&nbsp;&nbsp; </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top"><div style="width:650px; overflow:auto; background-color:#ffffff; padding:15px; border:1px solid #cccccc;">
+                           <table cellpadding="0" cellspacing="2" border="0" width="100%">
+                     
+                            <tr>
+                         <td width="200" height="36" align="right" valign="middle" ><asp:Label ID="lblShareText" runat="server" Text="Share Text"></asp:Label>:&nbsp;</td>
+                          <td height="25" align="left" valign="middle" ><asp:TextBox ID="txtShareText" runat="server" CssClass="sweepstakeinput"></asp:TextBox></td>
+                            </tr>
+                               <tr>
+                                 <td height="36" align="right" valign="top" >Share Message:&nbsp;</td>
+                            <td height="25" align="left" valign="middle" ><asp:TextBox ID="txtShareMessage" runat="server" CssClass="sweepstakeinputarea"></asp:TextBox></td>
+                              </tr>
+                              <tr>
+                                 <td height="36" align="right" valign="middle" >Share Image:&nbsp;</td>
+                                 <td height="25" align="left" valign="middle">
+                                <input type="file" runat="server" id="ShareImg" onChange="readURL(this);"  />
+                                &nbsp;<span class="SmallText">(jpg, jpeg, bmp, gif files only)</span>&nbsp;<br/>
+                                 <asp:Label id="lblIcon" runat="server"></asp:Label>
+							    <input type="hidden" ID="hdnimagevalue" runat="server" />
+							     <input type="hidden" id="hdnImage" runat="server" />
+                                </td>
+                              </tr>
+                          <%--   <tr>
+                                 <td height="36" align="right" valign="middle" >Share Email:&nbsp;</td>
+                               <td height="25" align="left" valign="middle" ><asp:TextBox ID="txtShareEmailadd" runat="server" CssClass="sweepstakeinput"></asp:TextBox></td>
+                             </tr>--%>
+                           
+                               <tr>
+                                 <td height="36" align="right" valign="top" >Email Text:&nbsp;</td>
+                                 <td height="25" align="left" valign="middle" > <asp:TextBox ID="txtShareEmailText" runat="server" CssClass="sweepstakeinputarea"></asp:TextBox></td>
+                             </tr>
+                           
+                           <tr>
+                                 <td height="36" align="right" valign="middle" >PDF:&nbsp;</td>
+                                 <td height="25" align="left" valign="middle">
+                                <input type="file" runat="server" id="PDffile" onChange="readURL(this);" /><span class="SmallText">&nbsp;(jpg, jpeg, bmp, gif files only)</span>&nbsp;<br/>
+                                 <asp:Label id="Label1" runat="server"></asp:Label>
+							    <input type="hidden" ID="Hidden5" runat="server" />
+							     <input type="hidden" id="Hidden6" runat="server" />
+                             </td>
+                    </tr>
+                  
+
+                            <input type="hidden" id="Hidden1" runat="server" name="hdnselectedPages" value="" />
+                            <input type="hidden" id="Hidden2" runat="server" name="hdnSelectedPagesName" value="" />
+                            <input type="hidden" id="Hidden3" runat="server" name="hdnSelectedPagesImage" value="" />
+                            <input type="hidden" id="Hidden4" runat="server" name="hdnselectedPagesAccessToken" value="" />
+ 
+                    </table>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td height="20" align="left" valign="middle" style="padding-top:10px; display:none;">
+                        <a href="javascript:;" id="csswdetail" class="bluetablink"  onclick="ValidateCustomiseUserMessage();">Save Sweepstakes Details</a>&nbsp;
+                        <a href="javascript:;" id="csswdetails" class="bluetablink" runat="server" style="display:none;" >Save Sweepstakes Details</a>&nbsp;
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+
+			  </div>                    

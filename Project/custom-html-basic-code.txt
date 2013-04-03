@@ -1,0 +1,360 @@
+<link type="text/css" rel="stylesheet" href="https://www.summasocialapp.com/soldbymayers.css"/>
+<script type="text/javascript" language="javascript" src="https://www.summasocialapp.com/soldbymayers.js"></script>
+<div id="apDiv1"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_likeus.png" width="90" height="82" /></div>
+<div id="apDiv2">
+  <div style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonial_bg.png); width:690px; height:154px; ">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="163" height="140" align="right" valign="bottom"><a href="javascript:;" onclick="ShowPopup('Testimonial1');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="152" height="100" border="0" align="top" /></a></td>
+        <td width="170" align="right" valign="bottom"><a href="javascript:;" onclick="ShowPopup('Testimonial2');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="152" height="100" border="0" align="top" /></a></td>
+        <td width="174" align="right" valign="bottom"><a href="javascript:;" onclick="ShowPopup('Testimonial3');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="152" height="100" border="0" align="top" /></a></td>
+        <td align="left" valign="bottom"><a href="javascript:;" onclick="ShowPopup('Testimonial4');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="152" height="100" border="0" align="top"  style="margin-left:21px;"/></a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div>
+<table id="Fullpos" width="809" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="809"><table id="Home" class="Menu" style="display:" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="55" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_top.jpg); height:55px; width:810px; background-position:top ; background-repeat:no-repeat"><div style="padding-top:22px;"><a href="javascript:;" class="headerlink" onclick="ShowMenu('Home');HidePopup('Map');"><font color="COLOR: #9b1f2e;"> HOME</font></a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('About');HidePopup('Map');">ABOUT</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Buyers');HidePopup('Map');">BUYERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Sellers');HidePopup('Map');">SELLERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('ContactUs');HidePopup('Map');">CONTACT</a></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td height="228" align="left" valign="bottom" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_home_img1.jpg); height:227px; width:810px; background-position:top ; background-repeat:no-repeat; display:block !important; border-collapse: collapse; border-spacing: 0; "></td>
+                </tr>
+                <tr>
+                  <td height="273" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_home_img2.jpg); height:273px; width:810px; background-position:top; background-repeat:no-repeat"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td width="329" height="264" align="left" valign="bottom" style="padding-left:24px;"><a href="http://link.flexmls.com/x4jr271lkuf,12" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="285" height="51" border="0" align="top" style="margin-bottom:17px;" /></a><a href="javascript:;" onclick="ShowPopup('Map');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="285" height="51" border="0" align="top" /></a></td>
+                        <td align="left" valign="top" style="padding-top:19px"><a href="http://youtu.be/f9hKYDNCMrU" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="418" height="238" border="0" align="top" /></a></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td height="268" align="right" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_home_img3.jpg); height:268px; width:810px; background-position:top; background-repeat:no-repeat"><table width="234" border="0" align="right" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td height="41" align="left" valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td height="85" align="left" valign="top"><a href="https://twitter.com/SoldByMyers" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="30" height="30" border="0" align="top" /><a href="http://www.linkedin.com/pub/kirsten-myers-kirsten-soldbymyers-com/38/53a/743" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="30" height="30" hspace="4" border="0" align="top" /></a><a href="http://www.youtube.com/channel/UCbi8YdLOi-2Qg_3TUm4o7bQ/feed?filter=2" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="30" height="30" border="0" align="top" /></a><a href="http://blog.soldbymyers.com/" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="30" height="30" hspace="4" border="0" align="top" /></a></td>
+                      </tr>
+                      <tr>
+                        <td height="25" align="left" valign="top" style="padding-left:15px;"><a href="javascript:;"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="167" height="19" border="0" align="top" /></a></td>
+                      </tr>
+                      <tr>
+                        <td height="24" align="left" valign="top" style="padding-left:15px;"><a href="javascript:;"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="167" height="19" border="0" align="top" /></a></td>
+                      </tr>
+                      <tr>
+                        <td height="25" align="left" valign="top" style="padding-left:15px;"><a href="javascript:;"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="181" height="19" border="0" align="top" /></a></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><a href="javascript:;" onclick="ShowPopup('DownloadPDF');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="200" height="51" border="0" align="top" /></a></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td height="168" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_home_img4.jpg); height:168px; width:810px; background-position:top; background-repeat:no-repeat"></td>
+                </tr>
+            </table>
+            </tbody></td>
+        </tr>
+        <tr>
+          <td height="77" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_body_down.jpg); height:77px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+        </tr>
+      </table>
+      <table id="About" class="Menu" style="display:none" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="55" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_top.jpg); height:55px; width:810px; background-position:top; background-repeat:no-repeat"><div style="padding-top:22px;"><a href="javascript:;" class="headerlink" onclick="ShowMenu('Home');HidePopup('Map');">HOME</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('About');HidePopup('Map');"><font color="COLOR: #9b1f2e;">ABOUT</font></a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Buyers');HidePopup('Map');">BUYERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Sellers');HidePopup('Map');">SELLERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('ContactUs');HidePopup('Map');">CONTACT</a></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="401" align="right" valign="bottom" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_about_img1.jpg); height:401px; width:810px; background-position:top; background-repeat:no-repeat"><a href="javascript:;" onclick="ShowMenu('ContactUs');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="254" height="51" border="0" align="top" style="margin-bottom:38px; margin-right:31px;" /></a></td>
+              </tr>
+              <tr>
+                <td height="369" align="right" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_about_img2.jpg); height:369px; width:810px; background-position:top; background-repeat:no-repeat"><table width="372" border="0" align="right" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="183" height="250" align="left" valign="bottom"><a href="mailto:Kriston@SoldByMyers.com" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="167" height="15" border="0" align="top"/></a></td>
+                      <td align="left" valign="bottom"><a href="mailto:David@SoldByMyers.com" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="159" height="15" border="0" align="top"/></a></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td height="168" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_about_img3.jpg); height:168px; width:810px; background-position:top; background-repeat:no-repeat"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="77" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_body_down.jpg); height:77px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+        </tr>
+      </table>
+      <table id="Buyers" class="Menu" style="display:none;" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="55" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_top.jpg); height:55px; width:810px; background-position:top; background-repeat:no-repeat"><div style="padding-top:22px;"><a href="javascript:;" class="headerlink" onclick="ShowMenu('Home');HidePopup('Map');">HOME</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('About');">ABOUT</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Buyers');HidePopup('Map');HidePopup('Map');"><font color="COLOR: #9b1f2e;">BUYERS</font></a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Sellers');HidePopup('Map');">SELLERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('ContactUs');HidePopup('Map');">CONTACT</a></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="228" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_buyers_img1.jpg); height:228px; width:810px; background-position:-1px; background-repeat:no-repeat">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="244" align="left" valign="bottom" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_buyers_img2.jpg); height:244px; width:810px; background-position:-1px; background-repeat:no-repeat"><div style="padding-left:24px; padding-bottom:2px; width:329px;"><a href="http://link.flexmls.com/x4jr271lkuf,12" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="285" height="51" border="0" align="top" style="margin-bottom:17px;" /></a><a href="javascript:;" onclick="ShowPopup('Map');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="285" height="51" border="0" align="top" /></a></div></td>
+              </tr>
+              <tr>
+                <td height="289" align="right" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_buyers_img3.jpg); height:289px; width:810px; background-position:top; background-repeat:no-repeat"><a href="javascript:;" onclick="ShowPopup('DownloadPDF');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="211" height="51" border="0" align="top" style="margin-right:32px" /></a></td>
+              </tr>
+              <tr>
+                <td height="168" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_buyers_img4.jpg); height:168px; width:810px; background-position:top; background-repeat:no-repeat"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="77" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_body_down.jpg); height:77px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+        </tr>
+      </table>
+      <table id="Sellers" class="Menu" style="display:none;" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="55" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_top.jpg); height:55px; width:810px; background-position:top; background-repeat:no-repeat"><div style="padding-top:22px;"><a href="javascript:;" class="headerlink" onclick="ShowMenu('Home');HidePopup('Map');">HOME</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('About');HidePopup('Map');">ABOUT</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Buyers');HidePopup('Map');">BUYERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Sellers');HidePopup('Map');"><font color="COLOR: #9b1f2e;">SELLERS</font></a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('ContactUs');HidePopup('Map');">CONTACT</a></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="228" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_sellers_img1.jpg); height:228px; width:810px; background-position:-1px; background-repeat:no-repeat">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="244" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_sellers_img2.jpg); height:244px; width:810px; background-position:-1px; background-repeat:no-repeat">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="289" align="right" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_sellers_img3.jpg); height:289px; width:810px; background-position:top; background-repeat:no-repeat"><a href="javascript:;" onclick="ShowPopup('DownloadPDF');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="211" height="51" border="0" align="top" style="margin-right:32px" /></a></td>
+              </tr>
+              <tr>
+                <td height="168" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_sellers_img4.jpg); height:168px; width:810px; background-position:top; background-repeat:no-repeat"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="77" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_body_down.jpg); height:77px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+        </tr>
+      </table>
+      <table id="ContactUs" class="Menu" style="display:none;" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="55" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_header_top.jpg); height:55px; width:810px; background-position:top; background-repeat:no-repeat"><div style="padding-top:22px;"><a href="javascript:;" class="headerlink" onclick="ShowMenu('Home');HidePopup('Map');">HOME</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('About');HidePopup('Map');">ABOUT</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Buyers');HidePopup('Map');">BUYERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('Sellers');HidePopup('Map');">SELLERS</a> <a href="javascript:;" class="headerlink" onclick="ShowMenu('ContactUs');HidePopup('Map');"><font color="COLOR: #9b1f2e;">CONTACT</font></a></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="401" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_contact_img1.jpg); height:401px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="369" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_contact_img2.jpg); height:369px; width:810px; background-position:top; background-repeat:no-repeat"><div style="padding-left:76px;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td height="38" align="left" valign="middle">&nbsp;</td>
+                        <td align="left" valign="middle">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="357" height="38" align="left" valign="middle"><input name="textfield4" type="text" id="txtName1" style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*First Name" onfocus="return check_text_onfocus(this,'*First Name')" onblur="return check_text_onblur(this,'*First Name')"/></td>
+                        <td align="left" valign="middle"><input name="textfield4" type="text" id="txtLastName1" style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*Last Name" onfocus="return check_text_onfocus(this,'*Last Name')" onblur="return check_text_onblur(this,'*Last Name')"/></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="86" align="left" valign="middle"><input name="textfield" type="text" id="txtEmail1" style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*Email Address" onfocus="return check_text_onfocus(this,'*Email Address')" onblur="return check_text_onblur(this,'*Email Address')"/></td>
+                            </tr>
+                            <tr>
+                              <td height="38" align="left" valign="middle"><input name="textfield2" type="text" id="txtPhone1" style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="Phone Number" onfocus="return check_text_onfocus(this,'Phone Number')" onblur="return check_text_onblur(this,'Phone Number')"/></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top">&nbsp;</td>
+                            </tr>
+                          </table></td>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="26">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td height="154" align="left" valign="top"><textarea name="textarea" id="txtMsg1" cols="45" rows="5" style="border:0px; height:120px; width:307px; font-family: 'Times New Roman', Times, serif;  font-size:17px; line-height:16px; overflow:auto; color:#000000; background-color:none; background:none; padding-top:8px;" onfocus="return check_text_onfocus(this,'* Message')" onblur="return check_text_onblur(this,'* Message')">* Message</textarea></td>
+                            </tr>
+                            <tr>
+                              <td align="right" valign="top" style="padding-right:69px;"><a href="javascript:;" onclick="ContactUsTabForm();"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="200" height="51" border="0" align="top" /></a></td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                    </table>
+                  </div></td>
+              </tr>
+              <tr>
+                <td height="168" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_contact_img3.jpg); height:168px; width:810px; background-position:top; background-repeat:no-repeat"></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="77" align="left" valign="top" style="background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_body_down.jpg); height:77px; width:810px; background-position:top; background-repeat:no-repeat">&nbsp;</td>
+        </tr>
+      </table>
+      <div id="DownloadPDF" style="display:none;position:absolute;background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_guides_bg.png); background-repeat:repeat-y; height:697px; width:779px; padding-top:241px; padding-left:31px;">
+        <div style="background-image: url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_sommerrealty_guides_bg.png); width:707px; height:286px; padding-top:119px; padding-left:43px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="358" height="60" align="left" valign="middle"><input name="textfield3" type="text" id="txtName2"  style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*First Name" onfocus="return check_text_onfocus(this,'*First Name')" onblur="return check_text_onblur(this,'*First Name')"/></td>
+              <td align="left" valign="middle"><input name="textfield5" type="text" id="txtLastName2"  style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*Last Name" onfocus="return check_text_onfocus(this,'*Last Name')" onblur="return check_text_onblur(this,'*Last Name')"/></td>
+            </tr>
+            <tr>
+              <td height="60" align="left" valign="middle"><input name="textfield6" type="text" id="txtEmail2" style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="*Email Address" onfocus="return check_text_onfocus(this,'*Email Address')" onblur="return check_text_onblur(this,'*Email Address')"/></td>
+              <td align="left" valign="middle"><input name="textfield7" type="text" id="txtPhone2"   style="border:0px; font-family: 'Times New Roman', Times, serif; font-size:17px; width:307px; height:25spx; color:#000000; background-color:none; background:none; " value="Phone Number" onfocus="return check_text_onfocus(this,'Phone Number')" onblur="return check_text_onblur(this,'Phone Number')"/></td>
+            </tr>
+            <tr>
+              <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="43" align="left" valign="top"></td>
+                  </tr>
+                  <tr>
+                    <td height="32" align="left" valign="top" style="padding-left:24px; "><input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
+                      <label for="checkbox-1-1"></label>
+                      <label for="checkbox"></label></td>
+                  </tr>
+                  <tr>
+                    <td height="32" align="left" valign="top" style="padding-left:24px;"><input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
+                      <label for="checkbox-1-2"></label>
+                      <label for="checkbox"></label></td>
+                  </tr>
+                  <tr>
+                    <td height="30" align="left" valign="top" style="padding-left:24px;"><input type="checkbox" id="checkbox-1-3" class="regular-checkbox" />
+                      <label for="checkbox-1-3"></label>
+                      <label for="checkbox"></label></td>
+                  </tr>
+                </table></td>
+              <td align="right" valign="top"><table width="240" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="79" align="left" valign="bottom"><a href="javascript:;" onclick="SubmitDownloadPDFForm();"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="200" height="51" border="0" align="top" /></a></td>
+                  </tr>
+                  <tr>
+                    <td height="47" align="right" valign="bottom" style="padding-right:46px;"><a href="javascript:;" onclick="HidePopup('DownloadPDF');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_transparent_img.png" width="56" height="13" border="0" align="top" /></a></td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Testimonial1" class="Testi" style="display:none;position:absolute;background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_guides_bg.png); background-repeat:repeat-y; height:697px; width:779px; padding-top:241px; padding-left:31px;">
+        <div style="background-image: url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonialbg1.png); width:750px; height:474px; ">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="132" align="left" valign="top" style="padding-left:25px; padding-top:23px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="183" height="125" align="left" valign="top"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonial_img1.png" width="171" height="123" /></td>
+                    <td align="left" valign="top" style="font-family:'Times New Roman', Times, serif; font-size:30px; font-style:italic; padding-top:15px;">Bob &amp; Kerry</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="280" align="left" valign="top" style="padding-left:25px; padding-right:40px; font-family:arial; font-size:14px; color:#000000; line-height:21px;">“<strong><em>Responsive</em></strong>.  That is the first word that comes to mind when crafting an endorsement of Sold by Myers. 
+                With about three days notice that my wife and I would be visiting the area on a holiday weekend (and her child’s birthday!), Kirsten Myers happily talked to us about our house desires, put together a list of properties and showed us around each one on a Saturday afternoon. <br />
+                <br />
+                Offer made, Kirsten had a contract in hours, and managed the entire process for us in an exemplary manner.  As we lived in California and the transaction was being processed remotely, timely communication was essential. For all inquires, electronic or phone, Kirsten was spot-on in her communication, keeping us apprised of every milestone event. <br />
+                <br />
+                Both Kirsten Myers and David Myers were very helpful providing quality referrals every time we asked for guidance finding mortgage brokers to home inspectors, to landscapers. I do not hesitate to recommend them as a solid, responsive team to help you with your real estate needs.” </td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" style="padding-right:44px;"><a href="javascript:;" onclick="HidePopup('Testimonial1');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_sommerrealty_close.png" width="57" height="13" border="0" align="top" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Testimonial2" class="Testi" style="display:none;position:absolute;background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_guides_bg.png); background-repeat:repeat-y; height:697px; width:779px; padding-top:241px; padding-left:31px;">
+        <div style="background-image: url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonialbg1.png); width:750px; height:474px; ">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="132" align="left" valign="top" style="padding-left:25px; padding-top:23px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="183" height="125" align="left" valign="top"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonial_img2.png" width="171" height="123" /></td>
+                    <td align="left" valign="top" style="font-family:'Times New Roman', Times, serif; font-size:30px; font-style:italic; padding-top:15px;">Randy &amp; Amy</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="280" align="left" valign="top" style="padding-left:25px; padding-right:40px; font-family:arial; font-size:14px; color:#000000; line-height:21px;">&quot;We were very happy to have Dave and Kirsten Myers work with us to sell our home. They provided us with outstanding advice about how to prepare our home for sale. Trying to short sale a home can be a very challenging process, however, Dave and Kirsten made the process so much easier. Kirsten handled all of the communications between the bank and the buyers, keeping our calls from the bank to a minimum. They both worked hard, illustrated a great understanding the difficult contract details, negotiation etiquette and documentation.<br />
+                <br />
+                I am confident that the reason we were able to sell our home rather than go into foreclosure was due to their expertise and persistence. We really appreciated Dave and Kirsten's reassurance and expert advice throughout the entire process. Dave and Kirsten were the outstanding professionals we were looking for, and having them work with us, made a challenging negotiation a wonderful success!&quot;</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" style="padding-right:44px;"><a href="javascript:;" onclick="HidePopup('Testimonial2');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_sommerrealty_close.png" width="57" height="13" border="0" align="top" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Testimonial3" class="Testi" style="display:none;position:absolute;background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_guides_bg.png); background-repeat:repeat-y; height:697px; width:779px; padding-top:241px; padding-left:31px;">
+        <div style="background-image: url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonialbg1.png); width:750px; height:474px; ">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="132" align="left" valign="top" style="padding-left:25px; padding-top:23px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="183" height="125" align="left" valign="top"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonial_img3.png" width="171" height="123" /></td>
+                    <td align="left" valign="top" style="font-family:'Times New Roman', Times, serif; font-size:30px; font-style:italic; padding-top:15px;">Brian &amp; Chassidy </td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="280" align="left" valign="top" style="padding-left:25px; padding-right:40px; font-family:arial; font-size:14px; color:#000000; line-height:21px;">“Chassidy and I would like to thank you for the great service you provided in helping us find and purchase our new home.  Your expertise, patience, diligence and persistence really made the process far less stressful for us.  I particularly appreciated your advice about how to proceed with our offer, negotiations and financing.  You both were always available to talk with us when we had questions.  Thank you also for helping us find the home inspector, pool expert and other service providers to get our home set up for our enjoyment.  We love our new Anthem home and look forward to telling our new neighbors and friends how great it was having you work for us.”</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" style="padding-right:44px;"><a href="javascript:;" onclick="HidePopup('Testimonial3');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_sommerrealty_close.png" width="57" height="13" border="0" align="top" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Testimonial4" class="Testi" style="display:none;position:absolute;background-image:url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_guides_bg.png); background-repeat:repeat-y; height:697px; width:779px; padding-top:241px; padding-left:31px;">
+        <div style="background-image: url(https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonialbg1.png); width:750px; height:474px; ">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td height="132" align="left" valign="top" style="padding-left:25px; padding-top:23px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="183" height="125" align="left" valign="top"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_testimonial_img4.png" width="171" height="123" /></td>
+                    <td align="left" valign="top" style="font-family:'Times New Roman', Times, serif; font-size:30px; font-style:italic; padding-top:15px;">Harvey &amp; Leslie</td>
+                  </tr>
+                </table></td>
+            </tr>
+            <tr>
+              <td height="280" align="left" valign="top" style="padding-left:25px; padding-right:40px; font-family:arial; font-size:14px; color:#000000; line-height:21px;">“Throughout our entire &quot;journey&quot; to home ownership - Kirsten was with us.  It is no stretch to say that in all our significant dealings with professional &quot;helpers&quot; over many years - Kirsten stands out as the best.  She carried us through finding our house and sealing the deal with more professionalism, optimism, enthusiasm, patience, kindness and smarts than most people ever get the opportunity and pleasure to experience.  We have a house we love and we have Kirsten to thank for that.<br />
+                <br />
+                AND...we got the benefit of a great team effort when David Myers lent his hand to the process. It was wonderful to be able to rely on the strengths and talents of both David and Kirsten and we benefited greatly from their partnership and team work.<br />
+                <br />
+                WITHOUT hesitation we would recommend The Sold By Myers team to anyone looking to buy or sell a home.  Working with Kirsten throughout the process and David at critical moments was a pleasure, a comfort, and an all around terrific experience.&quot;</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" style="padding-right:44px;"><a href="javascript:;" onclick="HidePopup('Testimonial4');"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_sommerrealty_close.png" width="57" height="13" border="0" align="top" /></a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="Map" style="display:none;position:absolute;width:810px; height:938px; z-index:100000;"><a href="javascript:;" onclick="ShowPopup('DownloadMap');"></a><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_map.jpg" width="810" height="938" border="0" usemap="#Map" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="25,25,196,76"  href="javascript:;" onclick="HidePopup('Map');"/>
+          <area shape="rect" coords="523,858,760,910" href="javascript:;"  onclick="ShowPopup('DownloadMap');"/>
+          <area shape="poly" coords="221,137,248,145,262,170,225,216,203,209,191,181" href="http://link.flexmls.com/x4h7bki043o,12" target="_blank"/>
+          <area shape="poly" coords="266,161,282,163,278,300,221,300,217,256,217,231" href="http://link.flexmls.com/x4hm4jelwqi,12" target="_blank" />
+          <area shape="poly" coords="294,183,328,183,336,219,325,281,331,295,352,295,382,287,408,301,433,331,447,339,456,348,442,356,317,361,319,389,314,420,289,419" href="http://link.flexmls.com/x4izxdlwd6d,12"  target="_blank"/>
+          <area shape="poly" coords="338,218,433,223,452,230,460,242,474,238,482,217,490,213,498,225,499,244,509,249,512,291,497,330,482,342,450,343,432,327,386,286,362,288,337,294,327,280" href="http://link.flexmls.com/x4izxs9v5gc,12" target="_blank" />
+          <area shape="poly" coords="302,463,442,465,440,525,316,523" href="http://link.flexmls.com/x4izxyqruzl,12" target="_blank" />
+          <area shape="poly" coords="373,529,438,526,438,564,374,564" href="http://link.flexmls.com/x4izy7oi9w6,12" target="_blank" />
+          <area shape="poly" coords="374,566,450,564,452,607,368,609" href="http://link.flexmls.com/x4j00b7c4at,12" target="_blank" />
+          <area shape="poly" coords="388,612,525,608,525,669,388,666" href="http://link.flexmls.com/x4j00hx2prg,12"  target="_blank"/>
+          <area shape="poly" coords="385,723,399,726,398,755,383,753" href="http://link.flexmls.com/x4j00x3dmrj,12" target="_blank" />
+          <area shape="poly" coords="401,714,427,712,428,762,442,771,464,771,475,782,473,833,426,835,419,807,415,787,403,776,401,765" href="http://link.flexmls.com/x4j00rnmc6z,12" target="_blank"/>
+          <area shape="poly" coords="379,754,419,811,426,834,382,832" href="http://link.flexmls.com/x4j01512tka,12" target="_blank"/>
+        </map>
+      </div></td>
+  </tr>
+  <tr>
+    <td height="49" align="left" valign="bottom"><div style="float:left; padding-left:70px;"><a href="https://www.summasocial.com" target="_blank"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_footer_copyright.jpg" width="154" height="15" border="0" align="top" /></a></div>
+      <div style="float:right; padding-right:67px;"><img src="https://www.summasocialapp.com/fb/soldbymyers-images/facebook_soldbymyers_footer_logo.jpg" width="126" height="40" vspace="3" align="top" /></div></td>
+  </tr>
+  <tr>
+    <td align="left" valign="bottom">&nbsp;</td>
+  </tr>
+</table>
+</div>

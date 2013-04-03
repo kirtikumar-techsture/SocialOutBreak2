@@ -1,0 +1,54 @@
+
+/***********************    Scheduler Popup  ***********************************/
+
+img { border:none; } ul { margin:0; padding:0; list-style:none;} li { margin:0; padding:0; list-style:none;}     
+.show_hide1{margin:3px 0 0 0; text-align:center; overflow:hidden;}
+.show_hide2{margin:3px 0 0 0; text-align:center; overflow:hidden;}
+.slidingDiv { width:170px; position:absolute; margin:30px 0 0 -382px; left:50%; display:inline;}
+.slidingDiv1 { width:170px; position:absolute; margin:5px 0 0 -207px; left:23%; display:inline;}
+.fan_showhide1{ width:200px; margin:3px 0 0 0; text-align:left; overflow:hidden; cursor:pointer;}
+.fan_close{ width:200px; margin:3px 0 0 0; text-align:right; overflow:hidden; cursor:pointer;}
+.Fanpagediv { width:500px; position:absolute; margin:30px 0 0 -382px; left:60%; display:inline; border:1px solid #044d85;}
+.Fanpagediv1 { width:500px; position:absolute; margin:5px 0 0 -260px; left:60%; display:inline; border:1px solid #044d85;}
+.slidingDiv2 { width:170px; position:absolute; margin:5px 0 0 -33px; left:23%; display:inline; }
+.pop_up_bx { width:170px; overflow:hidden;}
+.pop_up_bx_top { width:170px; height:15px; overflow:hidden; background:url(../images/pop_up_t_b.png) no-repeat;}
+
+.pop_up_bx_mid_inn{ width:154px; padding:0 8px; }
+.pop_up_bx_mid_inn ul{ width:154px; padding:0 0px; float:left; }
+.pop_up_bx_mid_inn ul li{ width:154px; padding:0 0px; float:left; }
+.pop_up_bx_mid_inn ul li a{ width:118px; text-decoration:none; padding:5px 18px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#000; }
+.pop_up_bx_mid_inn ul li a:hover, .pop_up_bx_mid_inn .act{ width:118px; padding:5px 18px; float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#fff; background:#003399; }
+.pop_up_bx_bot { width:170px; height:15px; overflow:hidden; background:url(../images/pop_up_t_b.png) no-repeat; background-position:0 -15px;}    
+.pop_up_bx_mid{ width:170px; height:280px; background:url(../../images/pop_up_mid.png) repeat-y;}
+
+.pop_up_bx_top_fan_page { width:500px; height:40px; overflow:hidden; background-image:url(Content/images/popup_top.png); background-repeat:no-repeat; background-position:top;}
+.pop_up_bx_mid_fan_page { width:500px; background:url(../images/pop_up_mid.png) repeat-y;}
+.pop_up_bx_mid_inn_fan_page { width:474px; padding:08px; background-color:#fff; border-left:5px solid #536ba1; border-right:5px solid #536ba1;}
+.pop_up_bx_bot_fan_page { width:500px; height:50px; overflow:hidden; background-image:url(Content/images/popup_bottom.png); background-repeat:no-repeat; background-position:bottom;}    
+
+/*  --------------------- End  -------------------  */
+
+/*********************    Calender CSS ***********************************************/
+
+        #content { font-size: 1.2em; /* for the rest of the page to show at a normal size */
+                   font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+                   width: 950px; margin: auto;
+        }
+        .box { border: 1px solid #888; padding: 15px; margin:12px; }
+        .code { margin: 6px; padding: 9px; background-color: #fdf5ce; border: 1px solid #c77405; }
+        /* css for timepicker */
+        .ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+        .ui-timepicker-div dl{ text-align: left; }
+        .ui-timepicker-div dl dt{ height: 25px; }
+        .ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+        .ui-timepicker-div td { font-size: 90%; }
+        #jq-books{width:200px;float:right;margin-right:0}
+	    #jq-books li{line-height:1.25em;margin:1em 0 2.8em;clear:left}
+	    #home-content-wrapper #jq-books a.jq-bookImg{float:left;margin-right:10px;width:55px;height:70px}
+	    #jq-books h3{margin:0 0 .2em 0}
+	    #home-content-wrapper #jq-books h3 a{font-size:1em;color:black;}
+	    #home-content-wrapper #jq-books a.jq-buyNow{font-size:1em;color:white;display:block;background:url(http://static.jquery.com/files/rocker/images/btn_blueSheen.gif) 50% repeat-x;text-decoration:none;color:#fff;font-weight:bold;padding:.2em .8em;float:left;margin-top:.2em;}
+	    
+
+/*********************    end ***********************************************/

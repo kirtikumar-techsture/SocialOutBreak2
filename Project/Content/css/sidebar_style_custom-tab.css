@@ -1,0 +1,1525 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background:transparent;
+	border:0;
+	font-size:100%;
+	margin:0;
+	outline:0;
+	padding:0;
+}
+body {
+	font-family:'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-family:
+	font-size:67.5%;
+	height:100%;
+	line-height:1
+}
+ol, ul {
+	list-style:none
+}
+blockquote, q {
+	quotes:none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:none
+}
+:focus {
+	outline:0
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+input {
+	margin:0
+}
+.rm-inline-edit.multiline {
+	line-height:1.5em
+}
+.rm-inline-edit .rm-inline-edit-content {
+	line-height:1.5em;
+	overflow:hidden;
+	vertical-align:middle
+}
+.rm-inline-edit .rm-inline-edit-content .empty {
+	color:inherit;
+	cursor:pointer;
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit
+}
+.rm-inline-edit .rm-inline-edit-input {
+	-moz-box-shadow:inset 0 0 5px rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow:inset 0 0 5px rgba(255, 255, 255, 0.5);
+-webkit-transition:0 .5s linear;
+	border:1px dotted #000;
+	box-shadow:inset 0 0 5px rgba(255, 255, 255, 0.5);
+	display:inline-block;
+	vertical-align:middle
+}
+.rm-inline-edit .rm-inline-edit-input .rm-input-field {
+	border:0;
+	line-height:1.5em
+}
+.rm-inline-edit span.rm-inline-edit-content, .rm-inline-edit span.inline-edit-input {
+	display:inline-block
+}
+.rm-inline-edit.block {
+	clear:left;
+	float:left
+}
+textarea.rm-input-field {
+	font-size:1em;
+	line-height:1.8em
+}
+.editor-subpanel {
+	float:left;
+	position:relative
+}
+.editor-subpanel-container {
+	clear:left;
+	height:100%;
+	position:relative
+}
+.editor-subpanel h3.ext-header {
+	color:#000;
+	float:left;
+	font-size:1.4em;
+	margin-bottom:10px
+}
+.editor-subpanel .tab-menu {
+	position:absolute;
+	right:0;
+	top:-2em
+}
+.editor-action {
+	color:#666;
+	float:left;
+	margin-left:10px;
+	position:relative;
+	top:-2px
+}
+a.editor-action-button {
+	background:#555;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:500;
+	margin:0 0px;
+	min-height:1em;
+	padding:0px 0px
+}
+a.editor-action-button:hover, a.editor-action-button:active {
+	background:#4badda;
+	color:#fff
+}
+.editor-action.inline {
+	background-image:none;
+	padding-right:0;
+	position:relative
+}
+.editor-action.inline a:hover {
+	background-color:transparent!important;
+	background-position:bottom right!important;
+	color:#fff!important
+}
+.editor-extrainfo {
+	background:#fff url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/1.png) repeat-x bottom;
+	color:#222;
+	line-height:27px;
+	min-height:29px;
+	padding-left:10px
+}
+.editor-submenu li {
+	display:block;
+	float:left;
+	font-size:1.2em;
+	text-align:center
+}
+.editor-submenu li a {
+	color:#222;
+	display:block;
+	font-weight:300
+}
+.editor-submenu li a.active {
+	background-image:none;
+	color:#222
+}
+.editor-submenu li a:hover .rm-menuinfo-bg, .editor-submenu li a.active .rm-menuinfo-bg {
+	background-color:#EBEEF2;
+	opacity:0.8
+}
+.editor-submenu li a.active:hover {
+	border-bottom:none
+}
+#editor-pane-container {
+	float:right;
+	margin:-30px 0 50px;
+	position:relative;
+	width:520px
+}
+#editor-pane {
+	-moz-border-radius:0 0 15px 15px;
+	-webkit-border-radius:0 0 15px 15px;
+	background-color:#f9f9f9;
+	border:1px solid #e5e5e5;
+	border-top:none;
+	color:#eee;
+	float:left;
+	padding:15px 15px 0;
+	position:relative;
+	width:490px
+}
+#editor-left-sidebar {
+	float:right;
+	margin:-30px 30px 0 0;
+	position:relative;
+	width:200px
+}
+#edit-top-row {
+	clear:both;
+	margin:0 -10px;
+	position:relative;
+	z-index:2
+}
+a, a:visited, a:hover, a:active {
+	color:#4badda;
+	text-decoration:none
+}
+p {
+	margin-bottom:20px
+}
+.clear-float {
+	clear:both
+}
+#rm-appearance-panel {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/top1.png) no-repeat 20px 0;
+	padding-top:21px;
+	position:absolute;
+	width:250px;
+	z-index:10000
+}
+#rm-appearance-panel .rm-css-subpanel {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/pane.png) repeat-y top;
+	float:left;
+	padding:0 18px 10px;
+	position:relative;
+	width:230px
+}
+#rm-appearance-panel .rm-css-subpanel h4 {
+	background:#666;
+	color:#fff;
+	margin:0 -10px 5px;
+	padding:10px 10px 5px
+}
+.rm-css-controlrow {
+	float:left;
+	margin-bottom:10px;
+	width:100%
+}
+.rm-color-select {
+	border:1px solid #cdcdcd;
+	cursor:pointer;
+	float:right;
+	height:25px;
+	margin-left:10px;
+	width:45px
+}
+.rm-css-color-selector.wide .rm-color-select {
+	width:150px
+}
+.rm-color-transparent {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/background_transparent.png) no-repeat center center;
+	border:1px solid #cdcdcd;
+	display:block;
+	height:15px;
+	opacity:0;
+	padding:5px;
+	position:absolute;
+	right:-25px;
+	text-indent:-9999px;
+	top:0;
+	width:15px
+}
+.rm-css-controllabel {
+	line-height:25px
+}
+.rm-css-control {
+	border:0
+}
+#rm-css-type-size #rm-css-type-size-indicator {
+	background:#f9f9f9;
+	border:1px solid #cdcdcd;
+	display:inline-block;
+	margin:0 5px 0 10px;
+	padding:5px;
+	width:30px
+}
+#rm-css-type-size .rm-css-type-size-button {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/background_controls.png) no-repeat -32px -69px;
+	display:inline-block;
+	height:19px;
+	margin-right:2px;
+	text-indent:-9999px;
+	vertical-align:middle;
+	width:21px
+}
+#rm-css-type-size #rm-css-type-decreasesize {
+	background-position:-53px -69px
+}
+#rm-css-type-size .rm-css-type-size-button:hover {
+	background-color:#f0f0f0
+}
+#rm-css-type-color {
+	float:right;
+	text-align:right
+}
+#rm-css-type-bold, #rm-css-type-italic {
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	background:#fff url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/font_buttons.png) no-repeat top left;
+	display:block;
+	float:left;
+	height:22px;
+	margin-right:5px;
+	text-indent:-9999px;
+	width:22px
+}
+#uniform-rm-css-font-family {
+	width:140px
+}
+a.more-info {
+	background:#bedbff;
+	border:1px solid #72c5eb;
+	display:inline-block;
+	height:15px;
+	line-height:15px;
+	margin-left:5px;
+	text-align:center;
+	vertical-align:middle;
+	width:15px
+}
+a.more-info:hover {
+	background:#72c5eb;
+	color:#fff;
+	font-weight:700
+}
+#rm-css-bgposition {
+	background-color:#fff;
+	border:1px solid #cdcdcd;
+	float:left;
+	height:65px;
+	margin-bottom:5px;
+	margin-left:5px;
+	position:relative;
+	width:65px
+}
+#rm-css-background-anchors a {
+	background-color:#dedede;
+	display:block;
+	position:absolute;
+	text-indent:-9999px
+}
+#rm-css-background-anchors a:hover {
+	background-color:#cdcdcd
+}
+#rm-css-background-anchors a:active, #rm-css-background-anchors a.active, #rm-css-bgposition-free.active, #rm-css-bgrepeat a.active {
+	background-color:#72c5eb
+}
+#rm-css-background-anchors #rm-css-bgposition-top {
+	height:10px;
+	left:15px;
+	top:0;
+	width:35px
+}
+#rm-css-background-anchors #rm-css-bgposition-right {
+	height:35px;
+	right:0;
+	top:15px;
+	width:10px
+}
+#rm-css-background-anchors #rm-css-bgposition-bottom {
+	bottom:0;
+	height:10px;
+	left:15px;
+	width:35px
+}
+#rm-css-background-anchors #rm-css-bgposition-left {
+	height:35px;
+	left:0;
+	top:15px;
+	width:10px
+}
+#rm-css-bgposition-free {
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	background:#fff url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/background_controls.png) top left;
+	display:block;
+	height:32px;
+	left:16px;
+	position:absolute;
+	text-indent:-9999px;
+	top:16px;
+	width:32px
+}
+#rm-css-bgposition-free:hover {
+	background-position:0 -32px
+}
+#rm-css-bgposition-free:active {
+	background-position:0 -64px
+}
+#bgposition-more-info {
+	background:#bedbff;
+	border:1px solid #72c5eb;
+	left:110px;
+	line-height:1.5em;
+	padding:10px;
+	position:absolute;
+	top:30px;
+	width:200px;
+	z-index:1
+}
+#rm-css-bgimage-advanced .rm-css-controllabel {
+	line-height:1.5em;
+	margin-bottom:5px
+}
+#rm-css-bgimage {
+	float:left;
+	margin-right:10px;
+	position:relative;
+	width:125px
+}
+#rm-css-bgimage-control {
+	background:#f9f9f9;
+	border:1px solid #cdcdcd;
+	border-bottom-width:2px;
+	height:18px;
+	line-height:18px;
+	margin-bottom:5px;
+	padding:3px;
+	position:relative;
+	width:113px
+}
+#rm-css-bgimage-control .progress-bar {
+	background-color:#cdcdcd;
+	color:#222;
+	font-size:12px;;
+	line-height:18px;
+	overflow:hidden;
+	text-align:center;
+	text-indent:5px;
+	width:0
+}
+#rm-css-bgimage-control .progress-bar.uploading {
+	background-color:#4badda;
+	color:#fff
+}
+#rm-css-bgimage-control .progress-bar.hover {
+	background-color:#666;
+	color:#fff;
+}
+#rm-css-bgimage-control #rm-css-bgimage-remove {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/images/ico-delete.gif) no-repeat bottom right;
+	display:block;
+	height:16px;
+	left:124px;
+	position:absolute;
+	text-indent:-9999px;
+	top:4px;
+	width:16px
+}
+#rm-css-bgimage .uploader {
+	margin-top:3px
+}
+#rm-css-bgimage-uploader {
+	cursor:pointer;
+	height:25px;
+	width:123px
+}
+#uploadPicButtonContainer {
+	display:none;
+	position:absolute;
+	right:0;
+	top:0
+}
+#revertButtonContainer {
+	bottom:0;
+	cursor:hand;
+	display:none;
+	position:absolute;
+	right:0
+}
+a.revert-fb-button {
+	background:#555;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:100;
+	margin:0 5px;
+	min-height:1em;
+	padding:5px 10px
+}
+a.revert-fb-button:hover {
+	cursor:pointer
+}
+#profPic-upload-progress {
+	background-color:#aaa;
+	height:10px;
+	left:17px;
+	padding:2px;
+	position:absolute;
+	top:50px;
+	width:72px
+}
+#profPic-upload-progress .progress-bar {
+	background:#fff;
+	color:#555;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:500;
+	height:10px
+}
+#rm-css-bgimage .uploader .filename {
+	display:none
+}
+#rm-css-bgimage .uploader .action {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#f9f9f9;
+	border:1px solid #cdcdcd;
+	padding:5px 10px;
+	text-align:center
+}
+#bgimage-upload {
+	cursor:pointer;
+	height:24px;
+	left:0;
+	position:absolute;
+	top:0
+}
+#rm-css-bgimage-advanced {
+	background:#dedede;
+	border:1px solid #cdcdcd;
+	border-top:2px solid #aaa;
+	clear:left;
+	float:left;
+	min-height:1em;
+	padding:5px;
+	position:relative;
+	width:220px
+}
+#rm-css-bgrepeat {
+	float:left;
+	margin-top:19px
+}
+#rm-css-bgrepeat a {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/background_controls.png);
+	display:block;
+	height:23px;
+	margin-bottom:3px;
+	text-indent:-9999px;
+	width:23px
+}
+#rm-css-bgrepeat-y {
+	background-position:-32px 0
+}
+#rm-css-bgrepeat-y:hover {
+	background-position:-32px -23px
+}
+#rm-css-bgrepeat-y:active {
+	background-position:-32px -46px
+}
+#rm-css-bgrepeat-x {
+	background-position:-55px 0
+}
+#rm-css-bgrepeat-x:hover {
+	background-position:-55px -23px
+}
+#rm-css-bgrepeat-x:active {
+	background-position:-55px -46px
+}
+#rm-multi-banner-switch {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background-color:#4badda;
+	border-radius:5px;
+	color:#FFF;
+	cursor:pointer;
+	float:left;
+	font-family:Futura, 'Tw Cen MT', 'Tw Cent MT', 'Tw Cen', 'Tw Cent', 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:14px;
+	height:47px;
+	left:0;
+	margin-left:5px;
+	padding:10px;
+	text-align:center;
+	top:0;
+	width:90px
+}
+#rm-appearance-multi-banner {
+	-moz-box-shadow:inset 0 3px 8px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow:inset 0 3px 8px rgba(0, 0, 0, 0.15);
+	background-color:#f9f9f9;
+	color:#666;
+	padding:10px 30px 10px 10px;
+	position:absolute;
+	top:0;
+	width:180px
+}
+#rm-appearance-multi-banner ul.thumbs {
+	margin-right:-25px;
+	margin-top:10px;
+	max-height:500px;
+	min-height:300px;
+	overflow:auto;
+	text-align:center
+}
+#rm-appearance-multi-banner ul.thumbs li {
+	background:#fff;
+	border:1px solid #dedede;
+	border-bottom:2px solid #cdcdcd;
+	cursor:move;
+	display:inline-block;
+	margin-bottom:5px;
+	overflow:hidden;
+	padding:5px;
+	position:relative
+}
+#rm-appearance-multi-banner ul.thumbs li.selected {
+	-moz-box-shadow:0 0 10px #4BADDA;
+	-webkit-box-shadow:0 0 10px #4BADDA;
+	box-shadow:0 0 10px #4BADDA
+}
+#rm-appearance-multi-banner ul.thumbs li:first-child {
+	margin-top:20px
+}
+#rm-appearance-multi-banner ul.thumbs li:last-child {
+	margin-bottom:50px
+}
+#rm-appearance-multi-banner-upload {
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	background-color:#555;
+	border-radius:10px;
+	color:#f9f9f9;
+	cursor:pointer;
+	display:block;
+	font-family:Futura, 'Tw Cen MT', 'Tw Cent MT', 'Tw Cen', 'Tw Cent', 'Century Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:14px;
+	height:20px;
+	line-height:20px;
+	padding:.75em 1.25em;
+	position:relative;
+	width:160px
+}
+#rm-appearance-multi-banner-upload div.progress-bar {
+	background:#FFF;
+	height:2px;
+	width:0
+}
+#rm-appearance-multi-banner-upload div.progress-number {
+	color:#FFF;
+	font-size:10px;
+	position:absolute;
+	right:10px;
+	top:13px
+}
+#rm-appearance-multi-banner-upload:hover {
+	background-color:#000
+}
+#rm-appearance-multi-banner .help-overlay {
+	display:none!important
+}
+#rm-appearance-controls {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/pane_bottom.png) no-repeat bottom;
+	float:left;
+	padding-bottom:25px
+}
+#rm-appearance-controls #rm-css-control-close {
+	background:#cdcdcd;
+	color:#222;
+	display:block;
+	font-weight:400;
+	margin:0 -10px -10px;
+	padding:3px;
+	text-align:right
+}
+#rm-appearance-controls #rm-css-control-close:hover {
+	background:#aaa;
+	color:#fff
+}
+#rm-appearance-controls #rm-css-control-cancel {
+	color:#222;
+	display:inline-block;
+	margin:0 0 10px;
+	padding:5px 0
+}
+#rm-appearance-controls #rm-css-control-cancel:hover {
+	font-weight:700
+}
+#rm-appearance-controls #rm-css-control-cancel:hover .icon {
+	background-position:bottom left
+}
+#rm-save-notifier>div {
+	-moz-border-radius:0 0 8px 8px;
+	-webkit-border-radius:0 0 8px 8px
+}
+#uniform-rm-css-border-style {
+	width:110px
+}
+div.selector {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#f9f9f9;
+	border:1px solid #cdcdcd;
+	float:left;
+	overflow:hidden;
+	padding:0 15px 0 5px;
+	position:relative
+}
+div.selector span {
+	/*display:inline-block;*/
+	line-height:20px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	vertical-align:middle;
+	white-space:nowrap
+}
+div.selector select {
+	background:none;
+	border:none;
+	height:25px;
+	left:0;
+	opacity:0;
+	position:absolute
+}
+div.uploader {
+	cursor:default;
+	float:left;
+	overflow:hidden;
+	position:relative
+}
+div.uploader span.action {
+	cursor:pointer;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	padding:2px 0
+}
+div.uploader span.filename {
+	cursor:default;
+	display:block;
+	float:left;
+	overflow:hidden;
+	padding:0 10px;
+	text-overflow:ellipsis;
+	white-space:nowrap
+}
+div.uploader input {
+	border:none;
+	bottom:0;
+	cursor:default;
+	float:right;
+	height:25px;
+	opacity:0;
+	position:absolute;
+	right:0;
+	top:0
+}
+.colorpicker {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_background.png);
+	display:none;
+	font-family:Arial, Helvetica, sans-serif;
+	height:176px;
+	overflow:hidden;
+	position:absolute;
+	width:356px
+}
+.colorpicker_color {
+	background:red;
+	cursor:crosshair;
+	height:150px;
+	left:14px;
+	overflow:hidden;
+	position:absolute;
+	top:13px;
+	width:150px
+}
+.colorpicker_color div {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_overlay.png);
+	height:150px;
+	left:0;
+	position:absolute;
+	top:0;
+	width:150px
+}
+.colorpicker_color div div {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_select.gif);
+	height:11px;
+	left:0;
+	margin:-5px 0 0 -5px;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	width:11px
+}
+.colorpicker_hue {
+	cursor:n-resize;
+	height:150px;
+	left:171px;
+	position:absolute;
+	top:13px;
+	width:35px
+}
+.colorpicker_hue div {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_indic.gif) left top;
+	height:9px;
+	left:0;
+	margin:-4px 0 0;
+	overflow:hidden;
+	position:absolute;
+	width:35px
+}
+.colorpicker_new_color {
+	background:red;
+	height:30px;
+	left:213px;
+	position:absolute;
+	top:13px;
+	width:60px
+}
+.colorpicker_current_color {
+	background:red;
+	height:30px;
+	left:283px;
+	position:absolute;
+	top:13px;
+	width:60px
+}
+.colorpicker input {
+	background-color:transparent;
+	border:1px solid transparent;
+	color:#898989;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	height:11px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	right:11px;
+	text-align:right;
+	top:4px
+}
+.colorpicker_hex {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_hex.png) top;
+	height:22px;
+	left:212px;
+	position:absolute;
+	top:142px;
+	width:72px
+}
+.colorpicker_hex input {
+	right:6px
+}
+.colorpicker_field {
+	background-position:top;
+	height:22px;
+	position:absolute;
+	width:62px
+}
+.colorpicker_field span {
+	cursor:n-resize;
+	height:22px;
+	overflow:hidden;
+	position:absolute;
+	right:0;
+	top:0;
+	width:12px
+}
+.colorpicker_rgb_r {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_rgb_r.png);
+	left:212px;
+	top:52px
+}
+.colorpicker_rgb_g {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_rgb_g.png);
+	left:212px;
+	top:82px
+}
+.colorpicker_rgb_b {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_rgb_b.png);
+	left:212px;
+	top:112px
+}
+.colorpicker_hsb_h {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_hsb_h.png);
+	left:282px;
+	top:52px
+}
+.colorpicker_hsb_s {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_hsb_s.png);
+	left:282px;
+	top:82px
+}
+.colorpicker_hsb_b {
+	background-image:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_hsb_b.png);
+	left:282px;
+	top:112px
+}
+.colorpicker_submit {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/colorpicker_submit.png) top;
+	height:22px;
+	left:322px;
+	overflow:hidden;
+	position:absolute;
+	top:142px;
+	width:22px
+}
+.colorpicker_focus {
+	background-position:center
+}
+#editor-main-banner {
+	margin:0 1px;
+	max-height:500px;
+	min-height:20px;
+	overflow:hidden;
+	position:relative;
+	width:520px
+}
+.ui-widget {
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.1em
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ui-widget-content {
+	background:#f9f9f9;
+	border-bottom:2px solid #cdcdcd;
+	border-top:1px solid #fff;
+	color:#222
+}
+.ui-widget-header {
+	background:#fff;
+	border:1px solid #f5f5f5;
+	color:#888;
+	font-weight:500
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background:#e6e6e6 url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/2.png) 50% 50% repeat-x;
+	border:1px solid #d3d3d3;
+	color:#555;
+	font-weight:500;
+	outline:none
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color:#555;
+	outline:none;
+	text-decoration:none
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+	background:#4badda;
+	border:1px solid #52BDEE;
+	color:#fff;
+	font-weight:500;
+	outline:none
+}
+.ui-state-hover a, .ui-state-hover a:hover {
+	color:#fff;
+	outline:none;
+	text-decoration:none
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background:#adafbb;
+	border:1px solid #aaa;
+	color:#212121;
+	font-weight:500;
+	outline:none
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color:#212121;
+	outline:none;
+	text-decoration:none
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+	background:#f4f6fb;
+	border:1px solid #4badda;
+	color:#363636
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a {
+	color:#363636
+}
+.ui-state-error, .ui-widget-content .ui-state-error {
+	background:#fef1ec;
+	border:1px solid #cd0a0a;
+	color:#cd0a0a
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled {
+	background-image:none;
+	filter:Alpha(Opacity=35);
+	opacity:.35
+}
+.ui-priority-primary, .ui-widget-content .ui-priority-primary {
+	font-weight:500
+}
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary {
+	filter:Alpha(Opacity=70);
+	font-weight:400;
+	opacity:.7
+}
+#uploadify-overlay {
+	background-color:#fff;
+	height:100%;
+	opacity:0.8;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:50
+}
+.uploadifyQueue {
+	background-color:#ff0000;
+	color:#000;
+	font-family:'Lucida Grande', Arial, Helvetica, sans-serif;
+	font-size:11px;
+	position:absolute;
+	/*width:358px;*/
+	width:-10px;
+	
+}
+.uploadifyQueueItem {
+	border:2px solid #E5E5E5;
+	padding:10px
+}
+.uploadifyError {
+	background-color:#FDE5DD!important
+}
+.uploadifyProgress {
+	background-color:#FFF;
+	border-bottom:1px solid #C5C5C5;
+	border-left:1px solid gray;
+	border-right:1px solid #C5C5C5;
+	border-top:1px solid gray;
+	margin-top:10px;
+	width:100%
+}
+.uploadifyProgressBar {
+	background-color:#09F;
+	height:3px;
+	width:1px
+}
+.editor-modal-layer {
+	background:rgba(255, 255, 255, 0.85);
+	display:none;
+	font-family:'Lucida Grande', Helvetica, Arial, sans-serif;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:522px;
+	z-index:2000
+}
+.editor-modal-layer .floating-window {
+	margin:50px auto 0;
+	position:relative;
+	width:300px;
+	z-index:2001
+}
+.editor-modal-layer .floating-window>div>.loading {
+	padding:30px 0;
+	text-align:center
+}
+.editor-modal-layer .floating-window>div {
+	background:#fff;
+	border:1px solid #cdcdcd;
+	clear:left;
+	color:#777;
+	position:relative
+}
+.editor-modal-layer h3 {
+	color:#444;
+	font-size:1.4em;
+	margin-bottom:15px
+}
+.editor-modal-layer .floating-window.full {
+	width:660px
+}
+.editor-modal-layer .loading-message {
+	background:#444;
+	color:#fff;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.4em;
+	font-weight:500;
+	padding:20px 20px 30px;
+	text-align:center
+}
+.modal-close {
+	background:#c7c7c7;
+	bottom:0;
+	color:#000!important;
+	display:block;
+	float:left;
+	font-size:.8em;
+	font-weight:500;
+	left:0;
+	padding:2px 10px 2px 0;
+	position:absolute;
+	text-align:right;
+	width:288px
+}
+.modal-close:hover {
+	background-color:#727272;
+	color:#fff
+}
+.full .modal-close {
+	width:648px
+}
+#editor-main-nav {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/basic_nav.png) no-repeat top left;
+	clear:left;
+	color:#555;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0 -15px;
+	position:relative;
+	z-index:0
+}
+#editor-main-nav .editor-submenu {
+	height:44px;
+	margin:0 -5px;
+	padding:0 15px
+}
+#editor-main-nav .editor-submenu li {
+	display:block;
+	float:left;
+	font-size:1.2em;
+	line-height:44px;
+	margin-right:.5em;
+	position:relative;
+	text-align:center
+}
+#editor-main-nav .editor-submenu li a {
+	color:inherit;
+	display:block;
+	font-style:inherit;
+	font-weight:inherit;
+	height:100%;
+	margin:0 .5em;
+	padding:0 1.4em
+}
+#editor-main-nav .editor-submenu li a:hover {
+	border-bottom:none;
+	color:#222
+}
+#editor-main-nav .editor-submenu li a.active, #editor-main-nav .editor-submenu li a:active {
+	background-color:inherit;
+	border-bottom:none;
+	color:#222
+}
+#editor-main-nav .editor-submenu li.more-info {
+	float:right;
+	font-size:1em;
+	margin-right:0
+}
+.editor-submenu li a .rm-menuinfo-text {
+	position:relative;
+	z-index:1
+}
+.editor-submenu li a .rm-menuinfo-bg {
+	-moz-border-radius:1em;
+	-webkit-border-radius:1em;
+	background-color:#000;
+	border-radius:1em;
+	display:block;
+	height:30px;
+	left:0;
+	margin:6px 0;
+	opacity:0.03;
+	position:absolute;
+	text-indent:-9999px;
+	top:0;
+	width:100%
+}
+.editor-submenu li a:hover .rm-menuinfo-bg {
+	background-color:#fff;
+	opacity:0.4
+}
+.plus #editor-main-nav li a .rm-menuinfo-bg {
+	background:#fff;
+	opacity:0.15
+}
+.plus #editor-main-nav li a:hover .rm-menuinfo-bg {
+	opacity:0.4
+}
+.rm-inline-edit[name=title]>.rm-inline-edit-content, .rm-inline-edit[name=location]>.rm-inline-edit-content {
+	max-width:420px;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+.rm-input-field[name=title], .empty[name=title] {
+	width:360px
+}
+.rm-input-field[name=location], .empty[name=location] {
+	max-width:480px
+}
+#editor-page-title {
+	float:left;
+	margin-bottom:5px;
+	margin-top:-5px;
+	max-width:440px;
+	width:auto
+}
+#editor-page-title h3 {
+	color:#000;
+	font-size:1.8em;
+	margin-bottom:3px
+}
+#editor-page-location {
+	color:#666
+}
+#editor-fan-count {
+	right:0;
+	top:0
+}
+#rm-photos {
+	padding:20px 20px 30px
+}
+.rm-inline-edit[name=twitter], .rm-inline-edit[name=twitterList] {
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.4em;
+	font-weight:500;
+	left:10px;
+	top:-3px
+}
+.rm-inline-edit-input>.rm-input-field[name=rssFeed] {
+	width:400px
+}
+#edit-social-media {
+	color:#555;
+	float:left
+}
+#edit-social-media h3 {
+	color:#222;
+	font-size:1.4em;
+	margin-bottom:10px;
+	margin-top:20px;
+	text-shadow:0 1px #fff
+}
+#edit-social-media h4 {
+	color:#555;
+	display:inline-block;
+	margin:0 5px 10px 0
+}
+#editor-video-pane {
+	background:#fff;
+	color:#aaa;
+	left:110px;
+	padding:20px;
+	position:absolute;
+	top:80px;
+	width:500px;
+	z-index:100
+}
+#filters-label {
+	float:left;
+	padding-right:10px;
+	width:110px
+}
+#filters {
+	float:left;
+	left:-4px;
+	margin-bottom:14px;
+	position:relative;
+	top:-5px;
+	width:500px
+}
+#filters .filter {
+	float:left;
+	font-weight:700;
+	margin-right:4px
+}
+#filters .filter .inner {
+	padding:3px 6px 4px;
+	position:relative;
+	top:3px
+}
+#filters .filter .inner_l {
+	left:4px;
+	position:relative
+}
+#filters .filter .inner_r {
+	left:-4px;
+	position:relative
+}
+#filters .filter .disabled {
+	background:url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/m.png) repeat-x;
+	padding:3px 0 4px;
+	top:-6px
+}
+#filters .filter .disabled a {
+	color:#FFF
+}
+#editor-footer {
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	background:#fff url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/small_light.png) repeat-x bottom left;
+	float:left;
+	margin:15px -15px 0;
+	position:relative;
+	width:520px
+}
+#editor-footer .pin-dock {
+	left:100%;
+	top:30px
+}
+#editor-footer-navbar {
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	background:#444 url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/subcontrol.png) repeat-x top left;
+	height:31px;
+	position:relative;
+	text-align:right
+}
+#nav-tabs {
+	bottom:0;
+	left:15px;
+	overflow:hidden;
+	position:absolute
+}
+#nav-tabs ul li {
+	display:block;
+	float:left;
+	height:25px;
+	margin-right:5px;
+	position:relative
+}
+#nav-tabs ul li a {
+	background:#444;
+	border:1px;
+	border-bottom:0;
+	border-color:#222;
+	border-style:solid;
+	color:#ccc;
+	display:block;
+	font-family:Futura, "Tw Cen MT", "Tw Cent MT", "Tw Cen", "Tw Cent", "Century Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:500;
+	height:25px;
+	line-height:22px;
+	padding:0 0px;
+	text-align:center
+}
+#nav-tabs ul li a:hover {
+	background:#000;
+	color:#ddd
+}
+#nav-tabs ul li a.active {
+	background:#fff;
+	color:#222
+}
+#edit-media-options {
+	color:#444;
+	padding:20px 20px 40px
+}
+#edit-media-options h3 {
+	font-size:1.2em
+}
+#editor-nav1 {
+	float:right;
+	margin:0px 0 0 0px;
+}
+#editor-nav1 a:hover {
+	color:#444
+}
+.rc-l {
+}
+.rc-m {
+}
+.rc-s {
+}
+.rc-xs {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px
+}
+.editor-nav1-panel {
+	margin:0 0 px;
+	padding:0 0 px;
+	position:relative
+}
+.editor-nav1-panel-content {
+	padding:0 0px
+}
+#editor-nav1-fb-export .editor-nav1-panel-content {
+	text-align:center
+}
+.editor-nav1-panel h3 {
+}
+.plus .editor-nav1-panel h3 {
+	background-color:#b9e4f1;
+	color:#222
+}
+.editor-nav1-items li a:hover span:hover {
+	background:#ffec6e
+}
+.nav-panel-expander {
+	background:transparent url(file://///ace/Projects/tsmaOutbreak2/Project/Content/sidebar-images/expand_contract_buttons.png) no-repeat top right;
+	display:block;
+	height:16px;
+	position:absolute;
+	right:5px;
+	text-indent:-9999px;
+	top:5px;
+	width:100%
+}
+.nav-panel-expander.active {
+	background-position:bottom right
+}
+.unexpanded-content {
+	margin-bottom:10px
+}
+/*#editor-nav1 .nav-action-button {
+	color:#03669d !important;
+	display:block;
+	font-family:arial !important;
+	font-size:13px !important;
+	font-weight:bold;
+	float:left;
+	margin:0 0 0px;
+	text-align:left;
+	width:240px;
+	margin: 0px 10px 0px 0;
+	padding:12px 0;
+	border-bottom: dotted #bdc7d8 1px;
+}*/
+#editor-nav1 .nav-action-button {
+	color:#03669d !important;
+	display:block;
+	font-family:arial !important;
+	font-size:12px !important;
+	font-weight:bold;
+	float:left;
+	margin:0 0 0px;
+	text-align:left;
+	width:163px;
+	margin: 0px 21px 0px 0;
+	padding:9px 0;
+	border-bottom: dotted #bdc7d8 1px;
+
+}
+#editor-nav1 .nav-action-button:hover {
+	background:#fff
+}
+#editor-nav1 .nav-action-button:active {
+	background:#666;
+	border-color:#444;
+	color:#fff!important
+}
+#editor-nav1 .nav-action-button.active {
+	background:#a0b0c8;
+	border-color:#A0D4EB #CAE7F4 #21779e #2587B3;
+	color:#fff!important;
+	padding-left:5px;
+}
+#editor-nav1 .nav-action-button:last-child {
+	margin-bottom:0
+}
+#editor-nav1 .nav-action-button:visited {
+	color:inherit
+}
+#editor-nav1 .nav-action-button.disabled {
+	background:#f5f5f5;
+	color:#444;
+	opacity:0.5
+}
+#editor-nav1 .nav-action-button.disabled:hover {
+	background:#fff;
+	opacity:1
+}
+#editor-nav1 .nav-action-button.disabled:active {
+	background:#cdcdcd
+}
+#editor-addons {
+	margin:0 -8px
+}
+.editor-addon {
+	-moz-box-shadow:#cdcdcd 0 2px 4px;
+	-webkit-box-shadow:#cdcdcd 0 2px 4px;
+	background:#fcfcfc;
+	border:1px solid #fff;
+	margin:0 0 3px;
+	position:relative
+}
+.editor-addon:hover {
+	-moz-box-shadow:#aaa 0 2px 4px;
+	-webkit-box-shadow:#aaa 0 1px 5px;
+	background-color:#fff;
+	cursor:pointer
+}
+.editor-addon a.help {
+	position:absolute;
+	right:8px;
+	top:5px
+}
+.editor-addon h4 {
+	color:#444;
+	font-size:1.4em;
+	padding:.5em 8px
+}
+.editor-addon h4 a, .editor-addon h4 a:hover, .editor-addon h4 a:active {
+	color:inherit;
+	display:block
+}
+span {
+	line-height:130%
+}
+.dotted {
+	position:relative;
+	z-index:1200
+}
+.spinner1Class {
+	background:#fff;
+	border:2px solid #185799;
+	left:192px;
+	padding:10px 150px;
+	position:absolute;
+	text-align:center;
+	top:260px;
+	z-index:20000
+}
+.rm-inline-edit, #editor-main-form, .rm-css-color-selector, #edit-media-options #rss-media-options {
+	position:relative
+}
+.rm-inline-edit div.rm-inline-edit-content, .rm-inline-edit div.inline-edit-input, .rm-css-subpanel .left-col {
+	float:left
+}
+a.editor-action-button:visited, #editor-nav1 a.rm-ui-button.dark:hover {
+	color:#fff
+}
+.editor-submenu, .editor-nav1-items li {
+	display:block
+}
+.rm-css-subpanel .right-col, .uploadifyQueueItem .cancel {
+	float:right
+}
+#rm-css-type-size .rm-css-type-size-button:active, #rm-css-type-italic.active, #rm-css-type-bold.active {
+	background-color:#bedbff
+}
+#rm-css-type-italic, #rm-css-bgimage-control #rm-css-bgimage-remove:hover {
+	background-position:top right;
+}
+.colorpicker_hex.colorpicker_focus, .colorpicker_submit.colorpicker_focus, .colorpicker_slider {
+	background-position:bottom
+}
+.ui-widget-content a, .ui-widget-header a {
+	color:#222
+}
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-state-error-text, .ui-widget-content .ui-state-error-text {
+	color:#cd0a0a
+}
+#edit-fbwall, #edit-twitter {
+	height:100px;
+	width:100%
+}

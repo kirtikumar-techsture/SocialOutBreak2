@@ -1,0 +1,2898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{237E6D92-94F0-42CA-8AC4-79E06326CF6D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>tsma</RootNamespace>
+    <AssemblyName>tsma</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>tsma.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>tsma.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=5.2.1.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22452, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Web.Routing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechstureIConverter, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\TechstureIConverter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about-customtab.aspx" />
+    <Content Include="Admin\add-admin-user.aspx" />
+    <Content Include="Admin\add-company.aspx" />
+    <Content Include="Admin\add-fan-friday.aspx" />
+    <Content Include="Admin\add-industry.aspx" />
+    <Content Include="Admin\add-library-category.aspx" />
+    <Content Include="Admin\add-library-data.aspx" />
+    <Content Include="Admin\add-user.aspx" />
+    <Content Include="Admin\add-weekly-tip.aspx" />
+    <Content Include="Admin\all-menus-company.aspx" />
+    <Content Include="Admin\all-menus-industry.aspx" />
+    <Content Include="Admin\all-menus.aspx" />
+    <Content Include="Admin\footer-small.ascx" />
+    <Content Include="Admin\footer.ascx" />
+    <Content Include="Admin\header-small.ascx" />
+    <Content Include="Admin\header.ascx" />
+    <Content Include="Admin\import-library-data.aspx" />
+    <Content Include="Admin\index.aspx" />
+    <Content Include="Admin\left.ascx" />
+    <Content Include="Admin\login.aspx" />
+    <Content Include="Admin\logout.aspx" />
+    <Content Include="Admin\manage-admin-users.aspx" />
+    <Content Include="Admin\manage-autopost.aspx" />
+    <Content Include="Admin\manage-companies.aspx" />
+    <Content Include="Admin\manage-fan-friday.aspx" />
+    <Content Include="Admin\manage-imagepost.aspx" />
+    <Content Include="Admin\manage-industries.aspx" />
+    <Content Include="Admin\manage-library-categories.aspx" />
+    <Content Include="Admin\manage-library-data.aspx" />
+    <Content Include="Admin\manage-linkpost.aspx" />
+    <Content Include="Admin\manage-published-customtab.aspx" />
+    <Content Include="Admin\manage-published-sidebar.aspx" />
+    <Content Include="Admin\manage-published-sweepstake.aspx" />
+    <Content Include="Admin\manage-quickpost.aspx" />
+    <Content Include="Admin\manage-saved-customtab.aspx" />
+    <Content Include="Admin\manage-saved-sidebar.aspx" />
+    <Content Include="Admin\manage-schedulepost.aspx" />
+    <Content Include="Admin\manage-textpost.aspx" />
+    <Content Include="Admin\manage-users.aspx" />
+    <Content Include="Admin\manage-video.aspx" />
+    <Content Include="Admin\manage-videopost.aspx" />
+    <Content Include="Admin\manage-weekly-tip.aspx" />
+    <Content Include="Admin\Preview-Menus.aspx" />
+    <Content Include="Admin\test-add-library-data.aspx" />
+    <Content Include="Admin\test.aspx" />
+    <Content Include="aflac_header.jpg" />
+    <Content Include="ajax\ajax-custom-tab-info.aspx" />
+    <Content Include="ajax\ajax-customise-sweepstak-contest.aspx" />
+    <Content Include="ajax\ajax-post-customtab.aspx" />
+    <Content Include="ajax\ajax-post-sweepstake.aspx" />
+    <Content Include="ajax\ajax-sweepstak-contest.aspx" />
+    <Content Include="amerifirst-sweepstake.aspx" />
+    <Content Include="AutoPost.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\BusinessAccessLayer.dll" />
+    <Content Include="bin\DataAccessLayer.dll" />
+    <Content Include="bin\Facebook.dll" />
+    <Content Include="bin\System.Web.Routing.dll" />
+    <Content Include="bin\tsma.dll" />
+    <Content Include="bin\tsma.pdb" />
+    <Content Include="bin\tsma.xml" />
+    <Content Include="boresha-welcome-tab-new.aspx" />
+    <Content Include="Boresha_Sweepstake.aspx" />
+    <Content Include="category.aspx" />
+    <Content Include="configure-autopost.aspx" />
+    <Content Include="contact-customtab.aspx" />
+    <Content Include="contact-us-tab-new.aspx" />
+    <Content Include="contact-us-tab.aspx" />
+    <Content Include="Content\css\admin-style.css" />
+    <Content Include="Content\css\apartment-style.css" />
+    <Content Include="Content\css\automotive-style.css" />
+    <Content Include="Content\css\automotive-style1.css" />
+    <Content Include="Content\css\chiropractic-style.css" />
+    <Content Include="Content\css\dentist-style.css" />
+    <Content Include="Content\css\florist-style.css" />
+    <Content Include="Content\css\general-style.css" />
+    <Content Include="Content\css\jquery-ui.css" />
+    <Content Include="Content\css\jquery.ui.timepicker.css" />
+    <Content Include="Content\css\mortgages-style.css" />
+    <Content Include="Content\css\realtor-style.css" />
+    <Content Include="Content\css\spa-style.css" />
+    <Content Include="Content\css\style-admin.css" />
+    <Content Include="Content\css\travel-style.css" />
+    <Content Include="Content\css\ui.theme.css" />
+    <Content Include="Content\css\veterinarians-style.css" />
+    <Content Include="Content\images\grid_top.gif" />
+    <Content Include="Content\images\ico-active.gif" />
+    <Content Include="Content\images\ico-edit.gif" />
+    <Content Include="Content\images\ico-inactive.gif" />
+    <Content Include="Content\images\Tulips.jpg" />
+    <Content Include="Content\include\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\include\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\include\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\include\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\include\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\include\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\include\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\include\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\include\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\include\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\include\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\include\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\include\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\include\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\include\jquery-1.5.1.min.js" />
+    <Content Include="Content\css\jquery-ui-1.8.14.custom.css" />
+    <Content Include="Content\include\jquery.ui.core.min.js" />
+    <Content Include="Content\include\jquery.ui.position.min.js" />
+    <Content Include="Content\include\jquery.ui.tabs.min.js" />
+    <Content Include="Content\include\jquery.ui.widget.min.js" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\include\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\js\floating-1.12.js" />
+    <Content Include="Content\js\include\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\js\include\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\js\include\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\js\include\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\js\include\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\js\include\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\js\include\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\js\include\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\js\include\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\js\include\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\js\include\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\js\include\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\js\include\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\js\include\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\js\include\jquery-1.5.1.min.js" />
+    <Content Include="Content\js\include\jquery-ui-1.8.14.custom.css" />
+    <Content Include="Content\js\include\jquery.ui.core.min.js" />
+    <Content Include="Content\js\include\jquery.ui.position.min.js" />
+    <Content Include="Content\js\include\jquery.ui.tabs.min.js" />
+    <Content Include="Content\js\include\jquery.ui.widget.min.js" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\js\include\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\js\jquery.min 1.4.4.js" />
+    <Content Include="Content\js\pagejs\index.js" />
+    <Content Include="Content\js\pagejs\scheduler.js" />
+    <Content Include="Content\js\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\js\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\js\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\js\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\js\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\js\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\js\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\js\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\js\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="coupon-customtab.aspx" />
+    <Content Include="coupon-tab-new.aspx" />
+    <Content Include="coupon-tab.aspx" />
+    <Content Include="cover-photo-selection-edit-test.aspx" />
+    <Content Include="custom-tabs-leads-admin.aspx" />
+    <Content Include="custom-tabs-leads.aspx" />
+    <Content Include="customise-tab.aspx" />
+    <Content Include="customize-amerifirst-sweepstake.aspx" />
+    <Content Include="customize-lexus-sweepstake.aspx" />
+    <Content Include="customize-sweepstake-content-new.aspx" />
+    <Content Include="customize-sweepstake-content.aspx" />
+    <Content Include="customize-sweepstake.aspx" />
+    <Content Include="dashboard.aspx" />
+    <Content Include="engage-tutorial.aspx" />
+    <Content Include="express-blank.aspx" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_about_us.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_about_us_content.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_about_us_hover.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_advanced_search_img1.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_advanced_search_img2.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_advanced_search_img3.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_buyers.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_buyers_content.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_buyers_hover.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_contact_us.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_contact_us_content.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_contact_us_hover.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_footer_text.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_header.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_home.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_home_content.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_home_header.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_home_hover.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_sellers.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_sellers_content.jpg" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_jeaninearmstrong_sellers_hover.png" />
+    <Content Include="Facebook_Tabs\armstrong_images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_buyers.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_buyers_hover.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_buyers_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_buyers_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_camis_team.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_camis_team_hover.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_cave_creek_popup.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_cave_phoenix_popup.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_contact.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_contact_hover.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_contact_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_contact_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_contact_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_bg.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_copyright.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img3.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img4.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img5.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img6.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img7.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img8.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_img9.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_next_arrow.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_footer_testimonials_pre_arrow.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_glendale_popup.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_guides_form.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_header_link_bg.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_header_top.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home_hover.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_home_video_bg.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_linkedin_icon.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_map_popup.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_popup_bg.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_scottsdale_popup.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_flash_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_flash_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_flash_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_flash_img4.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_hover.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img3.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img4.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img5.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img6.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img7.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img8.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_sellers_testimonials_img9.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_cami.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_img4.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_michelle.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_monique.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_select_icon.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_sharon.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_team_stephanie.jpg" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_twitter_icon.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_camielliott_youtube_icon.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Cami-Elliott-test.aspx" />
+    <Content Include="Facebook_Tabs\Cami-Elliott.aspx" />
+    <Content Include="Facebook_Tabs\Cami-Emiott-mail.aspx" />
+    <Content Include="Facebook_Tabs\cami-test.aspx" />
+    <Content Include="Facebook_Tabs\christine-scott-mail.aspx" />
+    <Content Include="Facebook_Tabs\christine-scott-search.aspx" />
+    <Content Include="Facebook_Tabs\christine-scott.aspx" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_3_easy_ways.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_attention_buyers.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_buyers_download_button_img.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_buying_a_home_title.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_contactus_content_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_contactus_content_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_contactus_form.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_contact_us_title.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_footer_right_logo.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_guides_form.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_header_top.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_header_top_bottom.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_home_content_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_home_content_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_home_content_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_linkedin.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_our_team_content_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_our_team_content_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_our_team_title.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_popup_central.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_popup_Dont_miss_out_bg.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_popup_north.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_popup_nw.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_popup_sw.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_sellers_content_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_sellers_content_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_selling_your_home_title.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_testimonials_arrow_next.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_testimonials_arrow_pre.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_testimonials_bg.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_twitter.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_welcome.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_cindypelton_you_tube.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\jquery.jshowoff.js" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Mail.aspx" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton.aspx" />
+    <Content Include="Facebook_Tabs\Cindy-Test.aspx" />
+    <Content Include="Facebook_Tabs\css\smoothDivScroll.css" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_bg.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_bob_hover_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_bob_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_gabrielle_hover_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_gabrielle_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_lana_hover_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_lana_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_meet_friedman.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_ted_hover_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_about_ted_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_age_img.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_buyers_download_button.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_buyers_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_commercial_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_commercial_properties.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_commercial_properties_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_contact.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_contact_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_contact_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_family_img.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_golf_img.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_guies_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_header_top.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_home.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_home_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_home_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_link_bg.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_our-re-sale_listings.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_our-re-sale_listings_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_our_rental_listings.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_our_rental_listings_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_planned_img.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_popup_top_arrow.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_residental_buyers.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_residental_buyers_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_residental_sellers.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_residental_sellers_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_resources.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_resources_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_search_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_search_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_sellers_download_button.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_sellers_img.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_arrow_next.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_arrow_pre.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_bg.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_flash_img1.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_flash_img2.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_flash_img3.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_flash_img4.jpg" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img3.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img4.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img5.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_img6.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_friedman_testimonials_title.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\friedmans-images\facebook__friedman_resources_hover.png" />
+    <Content Include="Facebook_Tabs\friedmans-mail.aspx" />
+    <Content Include="Facebook_Tabs\friedmans.aspx" />
+    <Content Include="Facebook_Tabs\george-bauder-mail.aspx" />
+    <Content Include="Facebook_Tabs\george-bauder.aspx" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\Chrysanthemum.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\cufon.js" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_call_josie_today_bg.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_close.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_dont_miss_out_bg.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_footer_copyrigth.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_header_top.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_social_icons1.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_social_icons2.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_social_icons3.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_social_icons4.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_bg.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img1_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img2_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img3.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img3_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img4.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img4_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img5.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img5_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img6.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_img6_small.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_slider_bg.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_josiepakula_testimonials_text.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\jaynesh.jpg" />
+    <Content Include="Facebook_Tabs\josie-pakula-images\Myriad_Pro_400.font.js" />
+    <Content Include="Facebook_Tabs\josie-pakula.aspx" />
+    <Content Include="Facebook_Tabs\js\common.js" />
+    <Content Include="Facebook_Tabs\js\jquery-1.6.2.js" />
+    <Content Include="Facebook_Tabs\js\jquery-1.6.2.min.js" />
+    <Content Include="Facebook_Tabs\js\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="Facebook_Tabs\js\jquery.fileDownload.js" />
+    <Content Include="Facebook_Tabs\js\jquery.jshowoff.js" />
+    <Content Include="Facebook_Tabs\js\jquery.jshowoff.min.js" />
+    <Content Include="Facebook_Tabs\js\jquery.mousewheel.min.js" />
+    <Content Include="Facebook_Tabs\js\jquery.simplyscroll.js" />
+    <Content Include="Facebook_Tabs\js\jquery.smoothdivscroll-1.2-min.js" />
+    <Content Include="Facebook_Tabs\js\jquery.smoothDivScroll-1.2.js" />
+    <Content Include="Facebook_Tabs\js\jshowoff.css" />
+    <Content Include="Facebook_Tabs\Kirsten-David.aspx" />
+    <Content Include="Facebook_Tabs\mob-redirect.aspx" />
+    <Content Include="Facebook_Tabs\olberding-mail.aspx" />
+    <Content Include="Facebook_Tabs\olberding.aspx" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_about.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_about_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_about_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_about_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_buyers_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_buyers_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_buyers_popup.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_commercial.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_commercial_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_commercial_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_commercial_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_commercial_img3.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_contact.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_contact_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_contact_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_contact_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_copyright.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_footer_square_img.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_footer_top_bg.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_guides_popup.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_header_logo.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_home.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_home_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_residential_buyers.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_residential_buyers_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_residential_sellers.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_residential_sellers_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_resources.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_resources_hover.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_resources_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_resources_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_sellers_popup.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials1bg.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials2bg.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials3bg.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials4bg.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials_close.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_testimonials_title.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_twitter.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_video_bg.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_video_close.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_westside_properties_img.jpg" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_pattybryant_youtube.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Patty-Bryant-mail.aspx" />
+    <Content Include="Facebook_Tabs\Patty-Bryant.aspx" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_area.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_blue_close.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_close.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_copyright.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_facebook_icon.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_footer_are_you_buying.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_footer_bg.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_footer_logo.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_footer_phone_no.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_foreign_exchange_piece.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_access_your_free.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_contact_us_form.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_flash_img1.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_flash_img2.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_flash_top_img.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_guide_to_buying.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_local_experts.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_meet_our_team_popup.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_search.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_search_popup.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_top.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_video_bg.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_home_whats_my.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_pocket_guide.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_share_tweet.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_tax_guide_comparison.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_twitter_icon.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_video_bob_img.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_video_kelly_img.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_video_steve_img.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_video_welcome_img.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_premierteam_youtube_icon.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\premier-team-images\search_all_arizona_homes_contact_us.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\search_all_arizona_homes_meet_our_team.jpg" />
+    <Content Include="Facebook_Tabs\premier-team-images\search_all_arizona_homes_search_all_arizona_homes.jpg" />
+    <Content Include="Facebook_Tabs\premierteam-mail.aspx" />
+    <Content Include="Facebook_Tabs\premierteam.aspx" />
+    <Content Include="Facebook_Tabs\RapaportTeam.aspx" />
+    <Content Include="Facebook_Tabs\robin-stetson-mail.aspx" />
+    <Content Include="Facebook_Tabs\robin-stetson.aspx" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_about_img1.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_about_img2.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_about_img3.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_body_down.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_buyers_img1.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_buyers_img2.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_buyers_img3.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_buyers_img4.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_contact_img1.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_contact_img2.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_contact_img3.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_guides_bg.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_header_likeus.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_header_top.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_home_img3.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_home_img4.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_map.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_sellers_img3.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_sellers_img4.jpg" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonialbg1.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonial_bg.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonial_img1.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonial_img2.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonial_img3.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_soldbymyers_testimonial_img4.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_sommerrealty_close.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_sommerrealty_guides_bg.png" />
+    <Content Include="Facebook_Tabs\soldbymyers-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\SoldByMyers-mail.aspx" />
+    <Content Include="Facebook_Tabs\SoldByMyers.aspx" />
+    <Content Include="Facebook_Tabs\Sommer-Realty-Iframe-App.aspx" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_contact_img1.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_contact_img2.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_contact_img3.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_header_like.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_home_img3.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_home_img4.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_linkedin_icon.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_pinterest_icon.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_twitter_icon.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_sommerrealty_youtube_icon.jpg" />
+    <Content Include="Facebook_Tabs\sommer-realty-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Sommer-Realty-mail.aspx" />
+    <Content Include="Facebook_Tabs\Sommer-Realty.aspx" />
+    <Content Include="Facebook_Tabs\susan-salamone-app.aspx" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_about.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_about_hover.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_about_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_about_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_about_img3.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_buyers.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_buyers_hover.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_buyers_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_buyers_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_buyers_img3.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_close.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_contact.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_contact_hover.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_contact_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_contact_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_free_guides.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_header_top.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_flash_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_flash_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_flash_img3.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_flash_img4.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_flash_img5.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_hover.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_img1.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_img2.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_home_img3.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_search_homes.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_search_homes_eastside.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_sellers.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_sellers_hover.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_sellers_img3.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_arrow_next.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_arrow_pre.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_bg2.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_bg_img1.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_bg_img2.jpg" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img1.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img2.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img3.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img4.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img5.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_content_img6.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img1.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img2.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img3.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img4.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img5.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_susansalamone_testimonials_img6.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\susan-salamone-mail.aspx" />
+    <Content Include="Facebook_Tabs\susan-salamone.aspx" />
+    <Content Include="Facebook_Tabs\sweepstake-content.aspx" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-test.aspx" />
+    <Content Include="Facebook_Tabs\jeanine-armstrong-mail.aspx" />
+    <Content Include="Facebook_Tabs\jeanine-armstrong.aspx" />
+    <Content Include="Facebook_Tabs\Joe-Payne-pdf1.aspx" />
+    <Content Include="Facebook_Tabs\joel-payne-mail.aspx" />
+    <Content Include="Facebook_Tabs\joel-payne-mail2.aspx" />
+    <Content Include="Facebook_Tabs\joel-payne.aspx" />
+    <Content Include="Facebook_Tabs\joel-payne1.aspx" />
+    <Content Include="Facebook_Tabs\marktaylor.aspx" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_contactus_popup.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_contact_img.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_footer_img.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_header_img.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_testimonial_img.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_testimonial_popup_img1.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_testimonial_popup_img2.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_testimonial_popup_img3.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_marktaylor_testimonial_popup_img4.jpg" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\Cindy-Pelton-Images\mark_images\share_img.png" />
+    <Content Include="Facebook_Tabs\pam-bechdel-mail.aspx" />
+    <Content Include="Facebook_Tabs\pam-bechdel-mail2.aspx" />
+    <Content Include="Facebook_Tabs\Pam-Bechdel.aspx" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_about_building_phoenix.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_about_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_amber_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_buyers_rapaport_realty.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_buying.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_chris_gretta_popup_bg.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_chuck_cindy_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_contact_us_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_download_free_realty_guides_bg.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_icon1.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_icon2.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_icon3.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_icon4.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_icon5.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_footer_left_logo.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_foreign_buyers.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_access_your_free_realty.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_anthem.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_community_lifestyle.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_las_sendas_mountain.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_local_schools.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_local_weather.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_search_communities.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_successfully_bringing.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_sun_city.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_verrado_community.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_home_vistancia.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_investors_corner.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_jon_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_randy_and_ kim_img.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_relocation.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_sellers_img3.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_selling.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_short_sales.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_testimonials_popup.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_top_button_bg.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_top_header.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_rapaportteam_top_likeus.jpg" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_transparent_arrow_next.png" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_transparent_arrow_pre.png" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_transparent_download_arrow.png" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\rapaport-team-images\facebook_transparent_video_popup_bg.png" />
+    <Content Include="Facebook_Tabs\RapaportTeam-Mail.aspx" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_donnanewman.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_footer_bg.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_footer_icon1.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_footer_icon2.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_footer_icon3.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_footer_icon4.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_form.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_form_thanks_bg.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_get_your_free.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_header_logo.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_learn_more.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_like_arrow.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_like_us_text.jpg" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_analysis_video_bg.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_popup_close_white.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_popup_like.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_popup_share.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_summasocial_popup_what_is_summa_social_text.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis-tab\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\summa-social-analysis.aspx" />
+    <Content Include="Facebook_Tabs\summa-social-mail.aspx" />
+    <Content Include="Facebook_Tabs\summa-social.aspx" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_donna_newman.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_jim_lupkin.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_summa_social_logo.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_about_us_todd_newman.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_click_to_view_more.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_case_studies_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_case_studies_top.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_hand_and_stone_spa.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_hand_and_stone_spa_hover.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_hand_and_stone_spa_title.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_humble_seed.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_humble_seed_hover.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_humble_seed_title.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_logo.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_the_great_discovery.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_the_great_discovery_hover.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_the_great_discovery_text.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_clients_title.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_contact_us.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_contact_us_form.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_contact_us_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_contact_us_img.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_contact_us_thanks_mes.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_deluxe_plan_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_footer_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_footer_facebook.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_footer_in.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_footer_twitter.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_footer_youtube.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_header_login.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_header_logo.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_header_people_like.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_home.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_home_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_home_inc_popup.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_home_thank_you.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_home_want_to_convert.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_inc.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_order_now_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_plans_img.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_plans_pricing_button.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_plans_pricing_button_blue.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_close_blue.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_close_white.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_how_can_you_get_results.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_like.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_share.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_popup_what_is_summa_social_text.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_premium_plan_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_product_tour_button.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_product_tour_video_bg.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_click_to_view.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_download_button.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_facebook_application_development_img.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_community_management.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_community_management_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_community_management_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_custom_services.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_custom_social_media_apps.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_custom_social_media_apps_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_development_services.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_keynotes_seminars.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_keynotes_seminars_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_keynotes_seminars_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_keynotes_seminars_video.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_quick_product_demo.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_quick_product_demo_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_quick_product_demo_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_quick_product_demo_video_img.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_social_media_designs.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_social_media_designs_bg.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_social_media_designs_hover.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_trainning_services.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_left_virtual_agency_app.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_the_donnanewman_button.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_services_title.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_small_biz_plan_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_testimonials_img.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_testimonial_content_bg.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_testimonial_white_bg.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_thank_you_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_the_online_text.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_vide_popup.png" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_summasocial_what_is_summasocial.jpg" />
+    <Content Include="Facebook_Tabs\summasocial-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_buyers_img1.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_buyers_img2.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_buyers_img3.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_home_img1.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_home_img2.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_home_img3.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_linkedin.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_resources_img1.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_resources_img2.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_resources_img3.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_sellers_img1.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_sellers_img2.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_sellers_img3.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_why_hire_me_img1.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_why_hire_me_img2.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_why_hire_me_img3.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-mail.aspx" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_transparent_img.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_contact_bg.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_footer_copyright.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_footer_logo.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_form_popup_bg.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_guides_bg.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_header_link_bg.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_header_logo.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_header_right_like.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_my_home_worth_bg.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_testimonials_arrow_next.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_testimonials_arrow_pre.jpg" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_twitter.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht-images\facebook_vickialbrecht_youtube.png" />
+    <Content Include="Facebook_Tabs\vicki-albrecht.aspx" />
+    <Content Include="Facebook_Tabs\your-primier-team.aspx" />
+    <Content Include="generate-sw-image.aspx" />
+    <Content Include="lead-tutorial.aspx" />
+    <Content Include="page-post-data.aspx" />
+    <Content Include="referrer.aspx" />
+    <Content Include="view-all-leads.aspx" />
+    <Content Include="lexus-sweepstake.aspx" />
+    <Content Include="local-user.aspx" />
+    <Content Include="cover-photo-selection-edit.aspx" />
+    <Content Include="cover-photo-selection.aspx" />
+    <Content Include="cover-photos-home.aspx" />
+    <Content Include="cover-photos.aspx" />
+    <Content Include="crop2.aspx" />
+    <Content Include="custom-tab-home.aspx" />
+    <Content Include="custom-tab-selection-edit.aspx" />
+    <Content Include="custom-tab-selection.aspx" />
+    <Content Include="custom-tab.aspx" />
+    <Content Include="custom-tabs.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="download.aspx" />
+    <Content Include="express-customtab.aspx" />
+    <Content Include="express-sidebar.aspx" />
+    <Content Include="fanpages.aspx" />
+    <Content Include="footer.ascx" />
+    <Content Include="friendlist.aspx" />
+    <Content Include="generate-cover-image.aspx" />
+    <Content Include="generate-ct-image.aspx" />
+    <Content Include="generate_image.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="handshake.aspx" />
+    <Content Include="header.ascx" />
+    <Content Include="html-toImage.aspx" />
+    <Content Include="inner-footer.ascx" />
+    <Content Include="inner-header.ascx" />
+    <Content Include="left.ascx" />
+    <Content Include="library.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="pending-messages.aspx" />
+    <Content Include="post-to-facebook.aspx" />
+    <Content Include="publish-cover-photo-edit.aspx" />
+    <Content Include="publish-cover-photo.aspx" />
+    <Content Include="publish-custom-tab.aspx" />
+    <Content Include="publish-sidebar-edit.aspx" />
+    <Content Include="publish-sidebar.aspx" />
+    <Content Include="rajni-generateimage.aspx" />
+    <Content Include="rajni-gimages.aspx" />
+    <Content Include="rajni-post.aspx" />
+    <Content Include="rotate-image.aspx" />
+    <Content Include="scheduler-home.aspx" />
+    <Content Include="scheduler-new.aspx" />
+    <Content Include="scheduler.aspx" />
+    <Content Include="select-test.aspx" />
+    <Content Include="selected-sweepstake.aspx" />
+    <Content Include="selected-tab.aspx" />
+    <Content Include="selection.aspx" />
+    <Content Include="SendLeadEmail.aspx" />
+    <Content Include="sent-messages.aspx" />
+    <Content Include="shopping-customtab.aspx" />
+    <Content Include="shopping-tab-new.aspx" />
+    <Content Include="shopping-tab.aspx" />
+    <Content Include="sweepstake-added.aspx" />
+    <Content Include="sweepstake-list.aspx" />
+    <Content Include="sweepstake-main.aspx" />
+    <Content Include="sweepstakes-leads-admin.aspx" />
+    <Content Include="sweepstakes-leads.aspx" />
+    <Content Include="training-test.aspx" />
+    <Content Include="view-autopost.aspx" />
+    <Content Include="view-schedulepost.aspx" />
+    <Content Include="vision-sw-added.aspx" />
+    <Content Include="vision-sweepstake.aspx" />
+    <Content Include="welcome-customtab.aspx" />
+    <Content Include="welcome-tab-new.aspx" />
+    <Content Include="welcome-tab.aspx" />
+    <None Include="Facebook_Tabs\Cami-Elliott-images\Buyers and Sellers Guide.pdf" />
+    <None Include="Facebook_Tabs\Cami-Elliott-images\CamiElliott- MAP.pdf" />
+    <None Include="Facebook_Tabs\Cindy-Pelton-Images\2012-Foreclosure-Short-Sale.pdf" />
+    <None Include="Facebook_Tabs\Cindy-Pelton-Images\2012-Foreign-Investors-Guide.pdf" />
+    <None Include="Facebook_Tabs\Cindy-Pelton-Images\2012-Home-Buyers-Guide.pdf" />
+    <None Include="Facebook_Tabs\Cindy-Pelton-Images\2012-Home-Sellers-Guide.pdf" />
+    <None Include="Facebook_Tabs\Cindy-Pelton-Images\REMAX FREE offer_CindyPelton.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie BuyersGuideAZMaricopa.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie ForeignBuyersGuideAZMaricopa.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie PurchaseContractGuideMaricopa.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie RelocationGuideMaricopa.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie SellersGuideMaricopa.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie ShortSaleBookletMaricopaCUSTOMER.pdf" />
+    <None Include="Facebook_Tabs\josie-pakula-images\Josie ShortSalevsForeclosure.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty Bryant5.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_Bryant_LifeofanEscrowInArizona.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_Bryant_PlanningToSell.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_Bryant_PreparingYourHomeForSale.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_Bryant_WaysToTakeTitleInArizona.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_BuyersGuideAZMaricopa.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_ForeignBuyersGuideAZMaricopa.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_RelocationGuideMaricopa.pdf" />
+    <None Include="Facebook_Tabs\Patty-Bryant-images\Patty_SellersGuideMaricopa.pdf" />
+    <None Include="Facebook_Tabs\premier-team-images\Fidelity-BuyerSeller.pdf" />
+    <None Include="Facebook_Tabs\rapaport-team-images\Press Release Homeless_Rapaport.pdf" />
+    <None Include="Facebook_Tabs\rapaport-team-images\RapaportHelpHomeless4.pdf" />
+    <None Include="Facebook_Tabs\rapaport-team-images\Sellers Checklist_Rapaport.pdf" />
+    <None Include="Facebook_Tabs\Relocation_Guide.pdf" />
+    <None Include="Facebook_Tabs\soldbymyers-images\SBM_BuyerGuide.pdf" />
+    <None Include="Facebook_Tabs\soldbymyers-images\SBM_ForeignBuyersGuide.pdf" />
+    <None Include="Facebook_Tabs\soldbymyers-images\Sold By Myers Map.pdf" />
+    <None Include="Facebook_Tabs\sommer-realty-images\SommerRealty_BuyersGuide.pdf" />
+    <None Include="Facebook_Tabs\sommer-realty-images\SommerRealty_ForeignBuyersGuide.pdf" />
+    <None Include="Facebook_Tabs\sommer-realty-images\SommerRealty_Map.pdf" />
+    <None Include="Facebook_Tabs\sommer-realty-images\SommerRealty_SellersGuide.pdf" />
+    <None Include="Facebook_Tabs\summa-social-analysis-tab\Thumbs.db" />
+    <None Include="Facebook_Tabs\summasocial-images\Inc on Summa Social.pdf" />
+    <None Include="Facebook_Tabs\susan-salamone-images\2012 ForeignInvestorsGuide-SS.pdf" />
+    <None Include="Facebook_Tabs\susan-salamone-images\2012 HomeBuyersGuide-SS.pdf" />
+    <None Include="Facebook_Tabs\susan-salamone-images\2012 HomeSellersGuide-SS.pdf" />
+    <None Include="Facebook_Tabs\vicki-albrecht-images\Thumbs.db" />
+    <None Include="rules.pdf" />
+    <None Include="Service References\SOServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\SOServiceReference\configuration.svcinfo" />
+    <None Include="Service References\SOServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="setup-page.aspx" />
+    <Content Include="sidebar-home.aspx" />
+    <Content Include="sidebar-templates.aspx" />
+    <Content Include="sidebar.aspx" />
+    <Content Include="sidebar_selection.aspx" />
+    <Content Include="sidebar_selection_edit.aspx" />
+    <Content Include="siteuserlogin1.aspx" />
+    <Content Include="SiteUserLogout.aspx" />
+    <Content Include="Scripts\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="siteuserlogin.aspx" />
+    <Content Include="support.aspx" />
+    <Content Include="sweepstake-content.aspx" />
+    <Content Include="sweepstake-home.aspx" />
+    <Content Include="sweepstake.aspx" />
+    <Content Include="sweepstake1.aspx" />
+    <Content Include="tab-810.aspx" />
+    <Content Include="tab.aspx" />
+    <Content Include="tabs-list.aspx" />
+    <Content Include="templates.aspx" />
+    <Content Include="test-generate.aspx" />
+    <Content Include="test-image-generate.aspx" />
+    <Content Include="test-siteuserlogin.aspx" />
+    <Content Include="test1.aspx" />
+    <Content Include="training.aspx" />
+    <Content Include="upload1.ashx" />
+    <Content Include="usercontrols\footer.ascx" />
+    <Content Include="usercontrols\inner-header.ascx" />
+    <Content Include="usercontrols\left.ascx" />
+    <Content Include="view-video.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService\CompanyPassword.aspx" />
+    <Content Include="WebService\save-user-selection.aspx" />
+    <None Include="videos\V-06282012012555PM.flv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about-customtab.aspx.designer.vb">
+      <DependentUpon>about-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about-customtab.aspx.vb">
+      <DependentUpon>about-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-admin-user.aspx.designer.vb">
+      <DependentUpon>add-admin-user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-admin-user.aspx.vb">
+      <DependentUpon>add-admin-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-company.aspx.designer.vb">
+      <DependentUpon>add-company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-company.aspx.vb">
+      <DependentUpon>add-company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-fan-friday.aspx.designer.vb">
+      <DependentUpon>add-fan-friday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-fan-friday.aspx.vb">
+      <DependentUpon>add-fan-friday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-industry.aspx.designer.vb">
+      <DependentUpon>add-industry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-industry.aspx.vb">
+      <DependentUpon>add-industry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-library-category.aspx.designer.vb">
+      <DependentUpon>add-library-category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-library-category.aspx.vb">
+      <DependentUpon>add-library-category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-library-data.aspx.designer.vb">
+      <DependentUpon>add-library-data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-library-data.aspx.vb">
+      <DependentUpon>add-library-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-user.aspx.designer.vb">
+      <DependentUpon>add-user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-user.aspx.vb">
+      <DependentUpon>add-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\add-weekly-tip.aspx.designer.vb">
+      <DependentUpon>add-weekly-tip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add-weekly-tip.aspx.vb">
+      <DependentUpon>add-weekly-tip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\all-menus-company.aspx.designer.vb">
+      <DependentUpon>all-menus-company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\all-menus-company.aspx.vb">
+      <DependentUpon>all-menus-company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\all-menus-industry.aspx.designer.vb">
+      <DependentUpon>all-menus-industry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\all-menus-industry.aspx.vb">
+      <DependentUpon>all-menus-industry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\all-menus.aspx.designer.vb">
+      <DependentUpon>all-menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\all-menus.aspx.vb">
+      <DependentUpon>all-menus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\footer-small.ascx.designer.vb">
+      <DependentUpon>footer-small.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\footer-small.ascx.vb">
+      <DependentUpon>footer-small.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\footer.ascx.designer.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\footer.ascx.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\header-small.ascx.designer.vb">
+      <DependentUpon>header-small.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\header-small.ascx.vb">
+      <DependentUpon>header-small.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\header.ascx.designer.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\import-library-data.aspx.designer.vb">
+      <DependentUpon>import-library-data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\import-library-data.aspx.vb">
+      <DependentUpon>import-library-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\left.ascx.designer.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\left.ascx.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-admin-users.aspx.designer.vb">
+      <DependentUpon>manage-admin-users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-admin-users.aspx.vb">
+      <DependentUpon>manage-admin-users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-autopost.aspx.designer.vb">
+      <DependentUpon>manage-autopost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-autopost.aspx.vb">
+      <DependentUpon>manage-autopost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-companies.aspx.designer.vb">
+      <DependentUpon>manage-companies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-companies.aspx.vb">
+      <DependentUpon>manage-companies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-fan-friday.aspx.designer.vb">
+      <DependentUpon>manage-fan-friday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-fan-friday.aspx.vb">
+      <DependentUpon>manage-fan-friday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-imagepost.aspx.designer.vb">
+      <DependentUpon>manage-imagepost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-imagepost.aspx.vb">
+      <DependentUpon>manage-imagepost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-industries.aspx.designer.vb">
+      <DependentUpon>manage-industries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-industries.aspx.vb">
+      <DependentUpon>manage-industries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-library-categories.aspx.designer.vb">
+      <DependentUpon>manage-library-categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-library-categories.aspx.vb">
+      <DependentUpon>manage-library-categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-library-data.aspx.designer.vb">
+      <DependentUpon>manage-library-data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-library-data.aspx.vb">
+      <DependentUpon>manage-library-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-linkpost.aspx.designer.vb">
+      <DependentUpon>manage-linkpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-linkpost.aspx.vb">
+      <DependentUpon>manage-linkpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-published-customtab.aspx.designer.vb">
+      <DependentUpon>manage-published-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-published-customtab.aspx.vb">
+      <DependentUpon>manage-published-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-published-sidebar.aspx.designer.vb">
+      <DependentUpon>manage-published-sidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-published-sidebar.aspx.vb">
+      <DependentUpon>manage-published-sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-published-sweepstake.aspx.designer.vb">
+      <DependentUpon>manage-published-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-published-sweepstake.aspx.vb">
+      <DependentUpon>manage-published-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-quickpost.aspx.designer.vb">
+      <DependentUpon>manage-quickpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-quickpost.aspx.vb">
+      <DependentUpon>manage-quickpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-saved-customtab.aspx.designer.vb">
+      <DependentUpon>manage-saved-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-saved-customtab.aspx.vb">
+      <DependentUpon>manage-saved-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-saved-sidebar.aspx.designer.vb">
+      <DependentUpon>manage-saved-sidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-saved-sidebar.aspx.vb">
+      <DependentUpon>manage-saved-sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-schedulepost.aspx.designer.vb">
+      <DependentUpon>manage-schedulepost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-schedulepost.aspx.vb">
+      <DependentUpon>manage-schedulepost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-textpost.aspx.designer.vb">
+      <DependentUpon>manage-textpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-textpost.aspx.vb">
+      <DependentUpon>manage-textpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-users.aspx.designer.vb">
+      <DependentUpon>manage-users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-users.aspx.vb">
+      <DependentUpon>manage-users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-video.aspx.designer.vb">
+      <DependentUpon>manage-video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-video.aspx.vb">
+      <DependentUpon>manage-video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-videopost.aspx.designer.vb">
+      <DependentUpon>manage-videopost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-videopost.aspx.vb">
+      <DependentUpon>manage-videopost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\manage-weekly-tip.aspx.designer.vb">
+      <DependentUpon>manage-weekly-tip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\manage-weekly-tip.aspx.vb">
+      <DependentUpon>manage-weekly-tip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Preview-Menus.aspx.designer.vb">
+      <DependentUpon>Preview-Menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Preview-Menus.aspx.vb">
+      <DependentUpon>Preview-Menus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\test-add-library-data.aspx.designer.vb">
+      <DependentUpon>test-add-library-data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\test-add-library-data.aspx.vb">
+      <DependentUpon>test-add-library-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\test.aspx.designer.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\test.aspx.vb">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax-custom-tab-info.aspx.designer.vb">
+      <DependentUpon>ajax-custom-tab-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax-custom-tab-info.aspx.vb">
+      <DependentUpon>ajax-custom-tab-info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax-customise-sweepstak-contest.aspx.designer.vb">
+      <DependentUpon>ajax-customise-sweepstak-contest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax-customise-sweepstak-contest.aspx.vb">
+      <DependentUpon>ajax-customise-sweepstak-contest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax-post-customtab.aspx.designer.vb">
+      <DependentUpon>ajax-post-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax-post-customtab.aspx.vb">
+      <DependentUpon>ajax-post-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax-post-sweepstake.aspx.designer.vb">
+      <DependentUpon>ajax-post-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax-post-sweepstake.aspx.vb">
+      <DependentUpon>ajax-post-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajax\ajax-sweepstak-contest.aspx.designer.vb">
+      <DependentUpon>ajax-sweepstak-contest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajax\ajax-sweepstak-contest.aspx.vb">
+      <DependentUpon>ajax-sweepstak-contest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="amerifirst-sweepstake.aspx.designer.vb">
+      <DependentUpon>amerifirst-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="amerifirst-sweepstake.aspx.vb">
+      <DependentUpon>amerifirst-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPost.aspx.designer.vb">
+      <DependentUpon>AutoPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPost.aspx.vb">
+      <DependentUpon>AutoPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="boresha-welcome-tab-new.aspx.designer.vb">
+      <DependentUpon>boresha-welcome-tab-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="boresha-welcome-tab-new.aspx.vb">
+      <DependentUpon>boresha-welcome-tab-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Boresha_Sweepstake.aspx.designer.vb">
+      <DependentUpon>Boresha_Sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Boresha_Sweepstake.aspx.vb">
+      <DependentUpon>Boresha_Sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="category.aspx.designer.vb">
+      <DependentUpon>category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="category.aspx.vb">
+      <DependentUpon>category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\Albums.vb" />
+    <Compile Include="Classes\checkApp.vb" />
+    <Compile Include="Classes\clsMail.vb" />
+    <Compile Include="Classes\clsSweepStake.vb" />
+    <Compile Include="Classes\CustomTab.vb" />
+    <Compile Include="Classes\FaceBookFriendList.vb" />
+    <Compile Include="Classes\FacebookUser.vb" />
+    <Compile Include="Classes\FanPage.vb" />
+    <Compile Include="Classes\ReadWriteCSV.vb" />
+    <Compile Include="clsReferrer.vb" />
+    <Compile Include="cls_CompanyPasswordValidation.vb" />
+    <Compile Include="cls_SaveUserSelection.vb" />
+    <Compile Include="configure-autopost.aspx.designer.vb">
+      <DependentUpon>configure-autopost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="configure-autopost.aspx.vb">
+      <DependentUpon>configure-autopost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-customtab.aspx.designer.vb">
+      <DependentUpon>contact-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-customtab.aspx.vb">
+      <DependentUpon>contact-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us-tab-new.aspx.designer.vb">
+      <DependentUpon>contact-us-tab-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us-tab-new.aspx.vb">
+      <DependentUpon>contact-us-tab-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact-us-tab.aspx.designer.vb">
+      <DependentUpon>contact-us-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact-us-tab.aspx.vb">
+      <DependentUpon>contact-us-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cookies.vb" />
+    <Compile Include="coupon-customtab.aspx.designer.vb">
+      <DependentUpon>coupon-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coupon-customtab.aspx.vb">
+      <DependentUpon>coupon-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coupon-tab-new.aspx.designer.vb">
+      <DependentUpon>coupon-tab-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coupon-tab-new.aspx.vb">
+      <DependentUpon>coupon-tab-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coupon-tab.aspx.designer.vb">
+      <DependentUpon>coupon-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coupon-tab.aspx.vb">
+      <DependentUpon>coupon-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cover-photo-selection-edit-test.aspx.designer.vb">
+      <DependentUpon>cover-photo-selection-edit-test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cover-photo-selection-edit-test.aspx.vb">
+      <DependentUpon>cover-photo-selection-edit-test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tabs-leads-admin.aspx.designer.vb">
+      <DependentUpon>custom-tabs-leads-admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tabs-leads-admin.aspx.vb">
+      <DependentUpon>custom-tabs-leads-admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tabs-leads.aspx.designer.vb">
+      <DependentUpon>custom-tabs-leads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tabs-leads.aspx.vb">
+      <DependentUpon>custom-tabs-leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customise-tab.aspx.designer.vb">
+      <DependentUpon>customise-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customise-tab.aspx.vb">
+      <DependentUpon>customise-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customize-amerifirst-sweepstake.aspx.designer.vb">
+      <DependentUpon>customize-amerifirst-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customize-amerifirst-sweepstake.aspx.vb">
+      <DependentUpon>customize-amerifirst-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customize-lexus-sweepstake.aspx.designer.vb">
+      <DependentUpon>customize-lexus-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customize-lexus-sweepstake.aspx.vb">
+      <DependentUpon>customize-lexus-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customize-sweepstake-content-new.aspx.designer.vb">
+      <DependentUpon>customize-sweepstake-content-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customize-sweepstake-content-new.aspx.vb">
+      <DependentUpon>customize-sweepstake-content-new.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="customize-sweepstake-content.aspx.designer.vb">
+      <DependentUpon>customize-sweepstake-content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customize-sweepstake-content.aspx.vb">
+      <DependentUpon>customize-sweepstake-content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customize-sweepstake.aspx.designer.vb">
+      <DependentUpon>customize-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customize-sweepstake.aspx.vb">
+      <DependentUpon>customize-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="engage-tutorial.aspx.designer.vb">
+      <DependentUpon>engage-tutorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="engage-tutorial.aspx.vb">
+      <DependentUpon>engage-tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="express-blank.aspx.designer.vb">
+      <DependentUpon>express-blank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="express-blank.aspx.vb">
+      <DependentUpon>express-blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\cami-elliott-test.aspx.designer.vb">
+      <DependentUpon>Cami-Elliott-test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\cami-elliott-test.aspx.vb">
+      <DependentUpon>Cami-Elliott-test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cami-Elliott.aspx.designer.vb">
+      <DependentUpon>Cami-Elliott.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cami-Elliott.aspx.vb">
+      <DependentUpon>Cami-Elliott.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cami-Emiott-mail.aspx.designer.vb">
+      <DependentUpon>Cami-Emiott-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cami-Emiott-mail.aspx.vb">
+      <DependentUpon>Cami-Emiott-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott-mail.aspx.designer.vb">
+      <DependentUpon>christine-scott-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott-mail.aspx.vb">
+      <DependentUpon>christine-scott-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott-search.aspx.designer.vb">
+      <DependentUpon>christine-scott-search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott-search.aspx.vb">
+      <DependentUpon>christine-scott-search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott.aspx.designer.vb">
+      <DependentUpon>christine-scott.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\christine-scott.aspx.vb">
+      <DependentUpon>christine-scott.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cindy-Pelton-Mail.aspx.designer.vb">
+      <DependentUpon>Cindy-Pelton-Mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cindy-Pelton-Mail.aspx.vb">
+      <DependentUpon>Cindy-Pelton-Mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cindy-Pelton.aspx.designer.vb">
+      <DependentUpon>Cindy-Pelton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Cindy-Pelton.aspx.vb">
+      <DependentUpon>Cindy-Pelton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\friedmans-mail.aspx.designer.vb">
+      <DependentUpon>friedmans-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\friedmans-mail.aspx.vb">
+      <DependentUpon>friedmans-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\friedmans.aspx.designer.vb">
+      <DependentUpon>friedmans.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\friedmans.aspx.vb">
+      <DependentUpon>friedmans.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\george-bauder-mail.aspx.designer.vb">
+      <DependentUpon>george-bauder-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\george-bauder-mail.aspx.vb">
+      <DependentUpon>george-bauder-mail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\george-bauder.aspx.designer.vb">
+      <DependentUpon>george-bauder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\george-bauder.aspx.vb">
+      <DependentUpon>george-bauder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\josie-pakula.aspx.designer.vb">
+      <DependentUpon>josie-pakula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\josie-pakula.aspx.vb">
+      <DependentUpon>josie-pakula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Kirsten-David.aspx.designer.vb">
+      <DependentUpon>Kirsten-David.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Kirsten-David.aspx.vb">
+      <DependentUpon>Kirsten-David.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\mob-redirect.aspx.designer.vb">
+      <DependentUpon>mob-redirect.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\mob-redirect.aspx.vb">
+      <DependentUpon>mob-redirect.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\olberding-mail.aspx.designer.vb">
+      <DependentUpon>olberding-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\olberding-mail.aspx.vb">
+      <DependentUpon>olberding-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\olberding.aspx.designer.vb">
+      <DependentUpon>olberding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\olberding.aspx.vb">
+      <DependentUpon>olberding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Patty-Bryant-mail.aspx.designer.vb">
+      <DependentUpon>Patty-Bryant-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Patty-Bryant-mail.aspx.vb">
+      <DependentUpon>Patty-Bryant-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Patty-Bryant.aspx.designer.vb">
+      <DependentUpon>Patty-Bryant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Patty-Bryant.aspx.vb">
+      <DependentUpon>Patty-Bryant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\premierteam-mail.aspx.designer.vb">
+      <DependentUpon>premierteam-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\premierteam-mail.aspx.vb">
+      <DependentUpon>premierteam-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\premierteam.aspx.designer.vb">
+      <DependentUpon>premierteam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\premierteam.aspx.vb">
+      <DependentUpon>premierteam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\RapaportTeam.aspx.designer.vb">
+      <DependentUpon>RapaportTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\RapaportTeam.aspx.vb">
+      <DependentUpon>RapaportTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\robin-stetson-mail.aspx.designer.vb">
+      <DependentUpon>robin-stetson-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\robin-stetson-mail.aspx.vb">
+      <DependentUpon>robin-stetson-mail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\robin-stetson.aspx.designer.vb">
+      <DependentUpon>robin-stetson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\robin-stetson.aspx.vb">
+      <DependentUpon>robin-stetson.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\SoldByMyers-mail.aspx.designer.vb">
+      <DependentUpon>SoldByMyers-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\SoldByMyers-mail.aspx.vb">
+      <DependentUpon>SoldByMyers-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\SoldByMyers.aspx.designer.vb">
+      <DependentUpon>SoldByMyers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\SoldByMyers.aspx.vb">
+      <DependentUpon>SoldByMyers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty-Iframe-App.aspx.designer.vb">
+      <DependentUpon>Sommer-Realty-Iframe-App.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty-Iframe-App.aspx.vb">
+      <DependentUpon>Sommer-Realty-Iframe-App.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty-mail.aspx.designer.vb">
+      <DependentUpon>Sommer-Realty-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty-mail.aspx.vb">
+      <DependentUpon>Sommer-Realty-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty.aspx.designer.vb">
+      <DependentUpon>Sommer-Realty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Sommer-Realty.aspx.vb">
+      <DependentUpon>Sommer-Realty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone-app.aspx.designer.vb">
+      <DependentUpon>susan-salamone-app.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone-app.aspx.vb">
+      <DependentUpon>susan-salamone-app.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone-mail.aspx.designer.vb">
+      <DependentUpon>susan-salamone-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone-mail.aspx.vb">
+      <DependentUpon>susan-salamone-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone.aspx.designer.vb">
+      <DependentUpon>susan-salamone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\susan-salamone.aspx.vb">
+      <DependentUpon>susan-salamone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht-test.aspx.designer.vb">
+      <DependentUpon>vicki-albrecht-test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht-test.aspx.vb">
+      <DependentUpon>vicki-albrecht-test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\jeanine-armstrong-mail.aspx.designer.vb">
+      <DependentUpon>jeanine-armstrong-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\jeanine-armstrong-mail.aspx.vb">
+      <DependentUpon>jeanine-armstrong-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\jeanine-armstrong.aspx.designer.vb">
+      <DependentUpon>jeanine-armstrong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\jeanine-armstrong.aspx.vb">
+      <DependentUpon>jeanine-armstrong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Joe-Payne-pdf1.aspx.designer.vb">
+      <DependentUpon>Joe-Payne-pdf1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Joe-Payne-pdf1.aspx.vb">
+      <DependentUpon>Joe-Payne-pdf1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne-mail.aspx.designer.vb">
+      <DependentUpon>joel-payne-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne-mail.aspx.vb">
+      <DependentUpon>joel-payne-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne-mail2.aspx.designer.vb">
+      <DependentUpon>joel-payne-mail2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne-mail2.aspx.vb">
+      <DependentUpon>joel-payne-mail2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne.aspx.designer.vb">
+      <DependentUpon>joel-payne.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\joel-payne.aspx.vb">
+      <DependentUpon>joel-payne.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\marktaylor.aspx.designer.vb">
+      <DependentUpon>marktaylor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\marktaylor.aspx.vb">
+      <DependentUpon>marktaylor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\pam-bechdel-mail.aspx.designer.vb">
+      <DependentUpon>pam-bechdel-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\pam-bechdel-mail.aspx.vb">
+      <DependentUpon>pam-bechdel-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\pam-bechdel-mail2.aspx.designer.vb">
+      <DependentUpon>pam-bechdel-mail2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\pam-bechdel-mail2.aspx.vb">
+      <DependentUpon>pam-bechdel-mail2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Pam-Bechdel.aspx.designer.vb">
+      <DependentUpon>Pam-Bechdel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\Pam-Bechdel.aspx.vb">
+      <DependentUpon>Pam-Bechdel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\RapaportTeam-Mail.aspx.designer.vb">
+      <DependentUpon>RapaportTeam-Mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\RapaportTeam-Mail.aspx.vb">
+      <DependentUpon>RapaportTeam-Mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social-analysis.aspx.designer.vb">
+      <DependentUpon>summa-social-analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social-analysis.aspx.vb">
+      <DependentUpon>summa-social-analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social-mail.aspx.designer.vb">
+      <DependentUpon>summa-social-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social-mail.aspx.vb">
+      <DependentUpon>summa-social-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social.aspx.designer.vb">
+      <DependentUpon>summa-social.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\summa-social.aspx.vb">
+      <DependentUpon>summa-social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht-mail.aspx.designer.vb">
+      <DependentUpon>vicki-albrecht-mail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht-mail.aspx.vb">
+      <DependentUpon>vicki-albrecht-mail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht.aspx.designer.vb">
+      <DependentUpon>vicki-albrecht.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\vicki-albrecht.aspx.vb">
+      <DependentUpon>vicki-albrecht.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facebook_Tabs\your-primier-team.aspx.designer.vb">
+      <DependentUpon>your-primier-team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facebook_Tabs\your-primier-team.aspx.vb">
+      <DependentUpon>your-primier-team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generate-sw-image.aspx.designer.vb">
+      <DependentUpon>generate-sw-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate-sw-image.aspx.vb">
+      <DependentUpon>generate-sw-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lead-tutorial.aspx.designer.vb">
+      <DependentUpon>lead-tutorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lead-tutorial.aspx.vb">
+      <DependentUpon>lead-tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="page-post-data.aspx.designer.vb">
+      <DependentUpon>page-post-data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page-post-data.aspx.vb">
+      <DependentUpon>page-post-data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PostData.vb" />
+    <Compile Include="referrer.aspx.designer.vb">
+      <DependentUpon>referrer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="referrer.aspx.vb">
+      <DependentUpon>referrer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view-all-leads.aspx.designer.vb">
+      <DependentUpon>view-all-leads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view-all-leads.aspx.vb">
+      <DependentUpon>view-all-leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lexus-sweepstake.aspx.designer.vb">
+      <DependentUpon>lexus-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lexus-sweepstake.aspx.vb">
+      <DependentUpon>lexus-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="local-user.aspx.designer.vb">
+      <DependentUpon>local-user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="local-user.aspx.vb">
+      <DependentUpon>local-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cover-photo-selection-edit.aspx.designer.vb">
+      <DependentUpon>cover-photo-selection-edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cover-photo-selection-edit.aspx.vb">
+      <DependentUpon>cover-photo-selection-edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cover-photo-selection.aspx.designer.vb">
+      <DependentUpon>cover-photo-selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cover-photo-selection.aspx.vb">
+      <DependentUpon>cover-photo-selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cover-photos-home.aspx.designer.vb">
+      <DependentUpon>cover-photos-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cover-photos-home.aspx.vb">
+      <DependentUpon>cover-photos-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cover-photos.aspx.designer.vb">
+      <DependentUpon>cover-photos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cover-photos.aspx.vb">
+      <DependentUpon>cover-photos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="crop2.aspx.designer.vb">
+      <DependentUpon>crop2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="crop2.aspx.vb">
+      <DependentUpon>crop2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tab-home.aspx.designer.vb">
+      <DependentUpon>custom-tab-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tab-home.aspx.vb">
+      <DependentUpon>custom-tab-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tab-selection-edit.aspx.designer.vb">
+      <DependentUpon>custom-tab-selection-edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tab-selection-edit.aspx.vb">
+      <DependentUpon>custom-tab-selection-edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tab-selection.aspx.designer.vb">
+      <DependentUpon>custom-tab-selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tab-selection.aspx.vb">
+      <DependentUpon>custom-tab-selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tab.aspx.designer.vb">
+      <DependentUpon>custom-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tab.aspx.vb">
+      <DependentUpon>custom-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="custom-tabs.aspx.designer.vb">
+      <DependentUpon>custom-tabs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="custom-tabs.aspx.vb">
+      <DependentUpon>custom-tabs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="download.aspx.designer.vb">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="download.aspx.vb">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="express-customtab.aspx.designer.vb">
+      <DependentUpon>express-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="express-customtab.aspx.vb">
+      <DependentUpon>express-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="express-sidebar.aspx.designer.vb">
+      <DependentUpon>express-sidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="express-sidebar.aspx.vb">
+      <DependentUpon>express-sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fanpages.aspx.designer.vb">
+      <DependentUpon>fanpages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fanpages.aspx.vb">
+      <DependentUpon>fanpages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="footer.ascx.designer.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="footer.ascx.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="friendlist.aspx.designer.vb">
+      <DependentUpon>friendlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="friendlist.aspx.vb">
+      <DependentUpon>friendlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generate-cover-image.aspx.designer.vb">
+      <DependentUpon>generate-cover-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate-cover-image.aspx.vb">
+      <DependentUpon>generate-cover-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generate-ct-image.aspx.designer.vb">
+      <DependentUpon>generate-ct-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate-ct-image.aspx.vb">
+      <DependentUpon>generate-ct-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="generate_image.aspx.designer.vb">
+      <DependentUpon>generate_image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="generate_image.aspx.vb">
+      <DependentUpon>generate_image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="handshake.aspx.designer.vb">
+      <DependentUpon>handshake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handshake.aspx.vb">
+      <DependentUpon>handshake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="header.ascx.designer.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html-toImage.aspx.designer.vb">
+      <DependentUpon>html-toImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html-toImage.aspx.vb">
+      <DependentUpon>html-toImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner-footer.ascx.designer.vb">
+      <DependentUpon>inner-footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inner-footer.ascx.vb">
+      <DependentUpon>inner-footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inner-header.ascx.designer.vb">
+      <DependentUpon>inner-header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="inner-header.ascx.vb">
+      <DependentUpon>inner-header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="left.ascx.designer.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="left.ascx.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="library.aspx.designer.vb">
+      <DependentUpon>library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="library.aspx.vb">
+      <DependentUpon>library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log.vb" />
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginCheck.vb" />
+    <Compile Include="Paging.vb" />
+    <Compile Include="pending-messages.aspx.designer.vb">
+      <DependentUpon>pending-messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pending-messages.aspx.vb">
+      <DependentUpon>pending-messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="post-to-facebook.aspx.designer.vb">
+      <DependentUpon>post-to-facebook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="post-to-facebook.aspx.vb">
+      <DependentUpon>post-to-facebook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publish-cover-photo-edit.aspx.designer.vb">
+      <DependentUpon>publish-cover-photo-edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publish-cover-photo-edit.aspx.vb">
+      <DependentUpon>publish-cover-photo-edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publish-cover-photo.aspx.designer.vb">
+      <DependentUpon>publish-cover-photo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publish-cover-photo.aspx.vb">
+      <DependentUpon>publish-cover-photo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publish-custom-tab.aspx.designer.vb">
+      <DependentUpon>publish-custom-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publish-custom-tab.aspx.vb">
+      <DependentUpon>publish-custom-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publish-sidebar-edit.aspx.designer.vb">
+      <DependentUpon>publish-sidebar-edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publish-sidebar-edit.aspx.vb">
+      <DependentUpon>publish-sidebar-edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="publish-sidebar.aspx.designer.vb">
+      <DependentUpon>publish-sidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="publish-sidebar.aspx.vb">
+      <DependentUpon>publish-sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rajni-generateimage.aspx.designer.vb">
+      <DependentUpon>rajni-generateimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rajni-generateimage.aspx.vb">
+      <DependentUpon>rajni-generateimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rajni-gimages.aspx.designer.vb">
+      <DependentUpon>rajni-gimages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rajni-gimages.aspx.vb">
+      <DependentUpon>rajni-gimages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rajni-post.aspx.designer.vb">
+      <DependentUpon>rajni-post.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rajni-post.aspx.vb">
+      <DependentUpon>rajni-post.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resize-tabs.ashx.vb">
+      <DependentUpon>resize-tabs.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="resize.ashx.vb">
+      <DependentUpon>resize.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="rotate-image.aspx.designer.vb">
+      <DependentUpon>rotate-image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rotate-image.aspx.vb">
+      <DependentUpon>rotate-image.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoutablePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RoutingHandler.vb" />
+    <Compile Include="scheduler-home.aspx.designer.vb">
+      <DependentUpon>scheduler-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scheduler-home.aspx.vb">
+      <DependentUpon>scheduler-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scheduler-new.aspx.designer.vb">
+      <DependentUpon>scheduler-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scheduler-new.aspx.vb">
+      <DependentUpon>scheduler-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="scheduler.aspx.designer.vb">
+      <DependentUpon>scheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="scheduler.aspx.vb">
+      <DependentUpon>scheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select-test.aspx.designer.vb">
+      <DependentUpon>select-test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="select-test.aspx.vb">
+      <DependentUpon>select-test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selected-sweepstake.aspx.designer.vb">
+      <DependentUpon>selected-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selected-sweepstake.aspx.vb">
+      <DependentUpon>selected-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selected-tab.aspx.designer.vb">
+      <DependentUpon>selected-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selected-tab.aspx.vb">
+      <DependentUpon>selected-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="selection.aspx.designer.vb">
+      <DependentUpon>selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="selection.aspx.vb">
+      <DependentUpon>selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendLeadEmail.aspx.designer.vb">
+      <DependentUpon>SendLeadEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendLeadEmail.aspx.vb">
+      <DependentUpon>SendLeadEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sent-messages.aspx.designer.vb">
+      <DependentUpon>sent-messages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sent-messages.aspx.vb">
+      <DependentUpon>sent-messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Service References\SOServiceReference\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="setup-page.aspx.designer.vb">
+      <DependentUpon>setup-page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup-page.aspx.vb">
+      <DependentUpon>setup-page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping-customtab.aspx.designer.vb">
+      <DependentUpon>shopping-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopping-customtab.aspx.vb">
+      <DependentUpon>shopping-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping-tab-new.aspx.designer.vb">
+      <DependentUpon>shopping-tab-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopping-tab-new.aspx.vb">
+      <DependentUpon>shopping-tab-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shopping-tab.aspx.designer.vb">
+      <DependentUpon>shopping-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="shopping-tab.aspx.vb">
+      <DependentUpon>shopping-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sidebar-home.aspx.designer.vb">
+      <DependentUpon>sidebar-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sidebar-home.aspx.vb">
+      <DependentUpon>sidebar-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sidebar-templates.aspx.designer.vb">
+      <DependentUpon>sidebar-templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sidebar-templates.aspx.vb">
+      <DependentUpon>sidebar-templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sidebar.aspx.designer.vb">
+      <DependentUpon>sidebar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sidebar.aspx.vb">
+      <DependentUpon>sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sidebar_selection.aspx.designer.vb">
+      <DependentUpon>sidebar_selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sidebar_selection.aspx.vb">
+      <DependentUpon>sidebar_selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sidebar_selection_edit.aspx.designer.vb">
+      <DependentUpon>sidebar_selection_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sidebar_selection_edit.aspx.vb">
+      <DependentUpon>sidebar_selection_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteuserlogin1.aspx.designer.vb">
+      <DependentUpon>siteuserlogin1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siteuserlogin1.aspx.vb">
+      <DependentUpon>siteuserlogin1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteUserLogout.aspx.designer.vb">
+      <DependentUpon>SiteUserLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteUserLogout.aspx.vb">
+      <DependentUpon>SiteUserLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="siteuserlogin.aspx.designer.vb">
+      <DependentUpon>siteuserlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siteuserlogin.aspx.vb">
+      <DependentUpon>siteuserlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="support.aspx.designer.vb">
+      <DependentUpon>support.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="support.aspx.vb">
+      <DependentUpon>support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake-added.aspx.designer.vb">
+      <DependentUpon>sweepstake-added.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake-added.aspx.vb">
+      <DependentUpon>sweepstake-added.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake-content.aspx.designer.vb">
+      <DependentUpon>sweepstake-content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake-content.aspx.vb">
+      <DependentUpon>sweepstake-content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake-home.aspx.designer.vb">
+      <DependentUpon>sweepstake-home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake-home.aspx.vb">
+      <DependentUpon>sweepstake-home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake-list.aspx.designer.vb">
+      <DependentUpon>sweepstake-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake-list.aspx.vb">
+      <DependentUpon>sweepstake-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake-main.aspx.designer.vb">
+      <DependentUpon>sweepstake-main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake-main.aspx.vb">
+      <DependentUpon>sweepstake-main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake.aspx.designer.vb">
+      <DependentUpon>sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake.aspx.vb">
+      <DependentUpon>sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstake1.aspx.designer.vb">
+      <DependentUpon>sweepstake1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstake1.aspx.vb">
+      <DependentUpon>sweepstake1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstakes-leads-admin.aspx.designer.vb">
+      <DependentUpon>sweepstakes-leads-admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstakes-leads-admin.aspx.vb">
+      <DependentUpon>sweepstakes-leads-admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sweepstakes-leads.aspx.designer.vb">
+      <DependentUpon>sweepstakes-leads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sweepstakes-leads.aspx.vb">
+      <DependentUpon>sweepstakes-leads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tab-810.aspx.designer.vb">
+      <DependentUpon>tab-810.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tab-810.aspx.vb">
+      <DependentUpon>tab-810.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tab.aspx.designer.vb">
+      <DependentUpon>tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tab.aspx.vb">
+      <DependentUpon>tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabs-list.aspx.designer.vb">
+      <DependentUpon>tabs-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabs-list.aspx.vb">
+      <DependentUpon>tabs-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="templates.aspx.designer.vb">
+      <DependentUpon>templates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="templates.aspx.vb">
+      <DependentUpon>templates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test-generate.aspx.designer.vb">
+      <DependentUpon>test-generate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test-generate.aspx.vb">
+      <DependentUpon>test-generate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test-image-generate.aspx.designer.vb">
+      <DependentUpon>test-image-generate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test-image-generate.aspx.vb">
+      <DependentUpon>test-image-generate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test-siteuserlogin.aspx.designer.vb">
+      <DependentUpon>test-siteuserlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test-siteuserlogin.aspx.vb">
+      <DependentUpon>test-siteuserlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="training-test.aspx.designer.vb">
+      <DependentUpon>training-test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="training-test.aspx.vb">
+      <DependentUpon>training-test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="training.aspx.designer.vb">
+      <DependentUpon>training.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="training.aspx.vb">
+      <DependentUpon>training.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload.ashx.vb">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="test1.aspx.designer.vb">
+      <DependentUpon>test1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test1.aspx.vb">
+      <DependentUpon>test1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="upload1.ashx.vb">
+      <DependentUpon>upload1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\footer.ascx.designer.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\footer.ascx.vb">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\inner-header.ascx.designer.vb">
+      <DependentUpon>inner-header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\inner-header.ascx.vb">
+      <DependentUpon>inner-header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\left.ascx.designer.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\left.ascx.vb">
+      <DependentUpon>left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view-autopost.aspx.designer.vb">
+      <DependentUpon>view-autopost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view-autopost.aspx.vb">
+      <DependentUpon>view-autopost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view-schedulepost.aspx.designer.vb">
+      <DependentUpon>view-schedulepost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view-schedulepost.aspx.vb">
+      <DependentUpon>view-schedulepost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view-video.aspx.designer.vb">
+      <DependentUpon>view-video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view-video.aspx.vb">
+      <DependentUpon>view-video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vision-sw-added.aspx.designer.vb">
+      <DependentUpon>vision-sw-added.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vision-sw-added.aspx.vb">
+      <DependentUpon>vision-sw-added.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vision-sweepstake.aspx.designer.vb">
+      <DependentUpon>vision-sweepstake.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vision-sweepstake.aspx.vb">
+      <DependentUpon>vision-sweepstake.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormRouteHandler.vb" />
+    <Compile Include="WebService\CompanyPassword.aspx.designer.vb">
+      <DependentUpon>CompanyPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\CompanyPassword.aspx.vb">
+      <DependentUpon>CompanyPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebService\save-user-selection.aspx.designer.vb">
+      <DependentUpon>save-user-selection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\save-user-selection.aspx.vb">
+      <DependentUpon>save-user-selection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome-customtab.aspx.designer.vb">
+      <DependentUpon>welcome-customtab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome-customtab.aspx.vb">
+      <DependentUpon>welcome-customtab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome-tab-new.aspx.designer.vb">
+      <DependentUpon>welcome-tab-new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome-tab-new.aspx.vb">
+      <DependentUpon>welcome-tab-new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome-tab.aspx.designer.vb">
+      <DependentUpon>welcome-tab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="welcome-tab.aspx.vb">
+      <DependentUpon>welcome-tab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WPageHandler.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="upload.ashx" />
+    <Content Include="resize.ashx" />
+    <Content Include="resize-tabs.ashx" />
+    <None Include="Service References\SOServiceReference\distributorWS.wsdl" />
+    <None Include="Service References\SOServiceReference\tsma.SOServiceReference.WSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="VideoBlog-flv.bat" />
+    <None Include="VideoBlog.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\uploads\images\" />
+    <Folder Include="Content\uploads\temp\" />
+    <Folder Include="Content\uploads\videos\" />
+    <Folder Include="videos\thumbnails\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SOServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessAccessLayer\BusinessAccessLayer.vbproj">
+      <Project>{CC0949BA-0EAA-4D11-93F4-4158E7DA0C00}</Project>
+      <Name>BusinessAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.vbproj">
+      <Project>{09EDE243-F358-4BFE-90C2-807F5C0A8185}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>5069</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--Created on 3/1/2012 2:22:54 PM-->
+<menu absolutePosition="auto" mode="popup" maxItems="25" menuAlign="left" withoutImages="true">
+   <MenuItem name="Setup a Page" id="1" href="../setup-page" tooltip="Setup a Page" withoutImages="true" src="" />
+   <MenuItem name="Post N' Leap" id="2" href="../scheduler" tooltip="Post N' Leap" withoutImages="true" src="" />
+   <MenuItem name="Design a Page" id="3" href="javascript:;" tooltip="Design a Page" withoutImages="true" src="">
+      <MenuItem name="Express Setup" id="9" href="javascript:;" tooltip="Express Setup" withoutImages="true" src="" />
+      <MenuItem name="Sidebars" id="4" href="../sidebar" tooltip="Sidebar" withoutImages="true" src="" />
+      <MenuItem name="Custom Tabs" id="5" href="../custom-tab" tooltip="Custom Tabs" withoutImages="true" src="" />
+      <MenuItem name="Sweepstakes" id="6" href="../sweepstakes" tooltip="Sweepstakes" withoutImages="true" src="" />
+   </MenuItem>
+   <MenuItem name="Training Center" id="7" href="../training" tooltip="Training Center" withoutImages="true" src="" />
+   <MenuItem name="Support" id="8" href="../support" tooltip="Support" withoutImages="true" src="" />
+</menu>

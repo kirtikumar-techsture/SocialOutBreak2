@@ -1,0 +1,163 @@
+/*button text - all levels*/
+.menuButtonSecond td, .menuButton td, .menuButtondown td, .menuButtonover td {
+	cursor:default;
+}
+/*menu text - all levels*/
+.defaultMenuText{
+	font: 11px "Microsoft Sans Serif", Arial;
+	padding-left:6px;
+	padding-right:5px;
+	color: #FFFFFF;
+}
+/*menu caption if any*/
+.menuName{
+	color : #314E67;
+	font : 11px Arial, Helvetica, sans-serif;
+	padding-left : 2px;
+	padding-right : 2px;
+}
+/*========= BUTTONS ======================*/
+
+/*plain button state - top level*/
+.menuButton {
+	height: 20px;
+	background-image: url(img/D-Menu.gif);
+	text-decoration: none;
+}
+/*down button state - top level*/
+.menuButtondown {
+	cursor : default;
+	font:12px Arial, sans-serif;
+	background-image: url(img/D-Menu.gif);
+	height: 20px;
+}
+/*mouse over button state - top level*/
+.menuButtonover {
+	cursor : default;
+	background-image: url(img/OMenu.gif);
+	height: 20px;
+}
+/*plain button state - other levels*/
+.menuButtonSecond {
+	font:12px Arial, sans-serif;
+	color: #FFFFFF;
+	background-image: url(img/D-Menu.gif);
+	height: 20px;
+	border-left: 1px solid #FFFFFF;
+}
+/*mouse over button and down button states - other levels*/
+.menuButtonSecondover, .menuButtonSeconddown {
+	color:white;
+	cursor : default;
+	font:12px Arial,sans-serif;
+	background-image: url(img/OMenu.gif);
+	height: 20px;
+	border-left: 1px solid #FFFFFF;
+}
+/*icon place style on button over/down - other levels
+.menuButtonSeconddownimg {
+	background-color : #C9D9F5;
+}*/
+
+/*text of mouse over button - other levels*/
+.menuButtonSeconddown td {
+	 color:white;
+	 cursor:default;
+	 border:0px solid;
+}
+
+
+/*============ PANELS and DEVIDERS ===========================================*/
+
+/*manu panel - top level*/
+.menuTable{
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0px;
+	color: White;
+	text-align: left;
+	vertical-align: middle;
+	text-decoration: none;
+	/*background-image: url(img/D-Menu.gif);*/
+	
+}
+/*menu panel - other levels*/
+.secondMenuTable{
+	margin : 0px;
+
+
+	-moz-user-select : none;
+	padding : 0;
+	height: 20px;
+}
+
+/*devider - horizontal*/
+.menudivider {
+	background-color : #AEC7D7;
+	border-left : solid #AEC7D7 0px;
+	border-right : solid #AEC7D7 0px;
+	height : 100%;
+	margin-bottom : 0px;
+	margin-top : 0px;
+	overflow : hidden;
+	vertical-align : middle;
+	width : 0px;
+}
+/*devider - vertical*/
+.menudividery {
+	background-color : #AEC7D7;
+	border-bottom : solid #AEC7D7 0px;
+	border-top : solid #AEC7D7 0px;
+	height : 0px;
+	overflow : hidden;
+	width : 100%;
+}
+
+/*================== DRAG HANDLERS ==================*/
+
+/*drag handler for menu - horizontal*/
+.menuhandle {
+	background-color : #AEC7D7;
+	border-bottom : solid #AEC7D7 0px;
+	border-left : solid #AEC7D7 0px;
+	border-right : solid #AEC7D7 0px;
+	border-top : solid #AEC7D7 0px;
+	cursor : move;
+	height : 100%;
+	overflow : hidden;
+	width : 0px;
+}
+/*drag handler for menu - vertical*/
+.vmenuhandle {
+	background-color : #AEC7D7;
+	border-bottom : solid #AEC7D7 0px;
+	border-left : solid #AEC7D7 0px;
+	border-right : solid #AEC7D7 0px;
+	border-top : solid #AEC7D7 0px;
+	cursor : move;
+	height : 0px;
+}
+
+
+/*============ ICONS and SCROLLERS ====================*/
+
+/*disabled icon - all levels*/
+.iconGray {
+	filter : BlendTrans(Percent=50) gray(); 
+	cursor: default; 
+	border:solid 1px #AEC7D7;
+}
+
+/*enabled scroller*/
+.menuscrollerenabled{
+	background-color:#CAC8D4;
+	 cursor: pointer;	
+	 text-align:center;
+}
+/*disabled scroller*/
+.menuscrollerdisabled{
+	background-color: #CAC8D4;
+	cursor: default;
+	visibility:hidden;
+	text-align:center;
+}

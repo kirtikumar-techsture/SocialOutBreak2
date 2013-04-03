@@ -1,0 +1,34 @@
+*
+.item{
+	background: url("../img/shadow_wide.png") no-repeat center bottom;
+	padding-top:5px;	
+	display: inline-block;
+	margin-bottom: 10px;
+	position:relative;
+}
+
+.item .delete{
+	position:absolute;
+	cursor:pointer;
+}
+
+.item a{
+	border: none;
+	display: block;
+	text-decoration: none;
+}
+
+.item:first-child .delete:before{
+	background:url('../img/tooltip.png') no-repeat;
+	content:'.';
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+}
+
+.item a img{
+	display:block;
+	border:none;
+}
+
+/* General styles */

@@ -1,0 +1,103 @@
+#popup_container_main {
+width:100%;
+height:100%;
+text-align:center;
+background-image:url(../images/popup_bg.png);
+
+}
+#popup_container {
+	font-family:'Lucida Grande',arial;
+	margin-left:400px;
+	margin-top:300px;
+	font-weight:bold;
+	text-align:left;
+	font-size: 12px;
+	width: 400px; 
+	height: 116px; 
+	background: #ffffff;
+	border:8px solid #7c7c7c;
+	color: #000;
+}
+#popup_container_Save {
+	font-family:'Lucida Grande',arial;
+	margin-left:300px;
+	margin-top:400px;
+	font-weight:bold;
+	text-align:left;
+	font-size: 12px;
+	width: 400px; 
+	height: 116px; 
+	background: #ffffff;
+	border:8px solid #7c7c7c;
+	color: #000;
+}
+#popup_AutoPostContainer {
+	font-family:'Lucida Grande',arial;
+	margin-left:200px;
+	margin-top:60px;
+	font-weight:bold;
+	text-align:left;
+	font-size: 12px;
+	width: 400px; 
+	height: 80px; 
+	background: #ffffff;
+	border:8px solid #7c7c7c;
+	color: #000;
+	
+}
+#popup_container1 {
+	font-family:'Lucida Grande',arial;
+	margin-left:200px;
+	margin-top:200px;
+	font-weight:bold;
+	text-align:left;
+	font-size: 12px;
+	width: 364px; 
+	height: 70px; 
+	background: #ffffff;
+	border:8px solid #7c7c7c;
+	color: #000;
+	
+}
+#popup_title {
+background-color:#6d84b4;
+padding:10px;
+font-size:13px;
+color:#FFF;
+height:12px;
+border:1px solid #3b5998;
+border-bottom:0px;
+}
+
+
+
+#popup_message {
+padding-top: 15px;
+padding-left: 10px;
+padding-bottom:15px;
+border:1px solid #555555;
+border-top:0px;
+border-bottom:0px;
+}
+
+#popup_panel {
+	background-color:#f2f2f2;
+	text-align: left;
+	padding:10px;
+	border:1px solid #555555;
+	border-top:1px solid #cccccc;
+	
+}
+.inputbutton
+{
+	background-image:url(../images/button_bg.gif);
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color:#5972a7;
+	border:1px solid #29447e;
+	height:22px;
+	padding:0px 5px;
+	color:#FFF;
+	
+}
+

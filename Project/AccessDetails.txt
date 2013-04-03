@@ -1,0 +1,153 @@
+=========  Do not use this now =========
+http://tsma.techsture.com
+FTP
+On Techsture 
+
+Database 
+host: tsmadb.db.6040159.hostedresource.com
+database: tsmadb
+username: tsmadb
+password: t5MA3b*xY
+Web Admin: https://p3nmssqladmin.secureserver.net/18/scripts/2005/login.aspx?uniqueDnsEntry=tsmadb.db.6040159.hostedresource.com
+
+=========  Use This =========
+URL: techsturedevelopment.com
+We are running IIS 7, .NET 4.0 Integrated, and SQL Server 2008 R2
+Website: http://www.techsturedevelopment.com/tsma2/
+FTP Server: techsturedevelopment.com    
+username: techsture 
+password: w3Bs0CM3d
+
+SQL Server:  techsturedevelopment.com or webuild.arvixevps.com
+Database: tsmaDB
+username: sa
+password: w3ar3s0c1al 
+
+New UserName and Password (Use this)
+username: tsma_app_user
+password: t5m@pr0d!
+
+================
+First Login to facebook using following accessdetails:
+techstures@gmail.com
+techstures123
+
+https://www.totalsocialmediaagency.com
+Password - tedtest6
+Username - tedtest6
+Distributor ID 110844
+
+
+===============================  Old Server Details  for TSMA/So.TSMA/USWEB/Summa/Meadow ===========================================================
+http://www.tsmaapplication.com Remote Access Details
+184.73.201.27
+user: Administrator
+pwd: t5m@pr0d!
+
+
+=============================== New Remote Access Details for TSMA/So.TSMA/USWEB/Summa/Meadow =====================
+
+http://www.tsmaapplication.com Remote Access Details
+50.19.238.110
+user: Administrator
+pwd: t5m@pr0d!
+
+
+
+http://www.techsturedevelopment.com Remote Access Details
+techsturedevelopment.com
+user: Administrator
+pwd: t5m@pr0d!
+
+http://www.tsmaapplication.com SQL Server Remote Access Details
+Server= 107.20.109.6
+user: Administrator
+pwd: t5m@pr0d!
+
+
+
+SQL Server Database Details
+
+Database: tsmaDB
+Server= 107.20.109.6
+UserName: tsma_app_user
+Password: t5m@pr0d!
+===============================
+
+
+For Training.tsmaapplication.com
+Database Detail:
+Database: tsmaDB
+Username: tsma_training_user
+Old password: ts45$usc@
+New Password: t5m@pr0d!
+
+
+
+======Database for TSMASO DB
+Username: tsma_so_user
+Password: ihb7uy$867s
+
+
+==============================   TSMA/So.TSMA/Summa/UsWEB/Meadow FTP ====================================================
+
+Server: 184.73.201.27
+Port: Leave port empty or 21
+User: techsture
+pwd: techd3v
+
+
+
+==============================   TSMA/So.TSMA/Summa/UsWEB/Meadow Autopost server  FTP Details====================================================
+
+Server: 50.19.238.110
+Port: Leave port empty or 21
+User: techsture
+pwd: techd3v
+
+
+
+
+=====================  UserName / Password of TSMA Developers For Basecamp
+
+Access Details For https://webuildyoursocialmediacom.basecamphq.com/login
+
+1. Kapil
+
+Username : kapil@techsture.com
+Password: chrdjbar19kapil
+
+2. Kirti
+
+Username : kirtikumar.techsture@gmail.com
+Password: techsture@ahm
+
+3. Prashant
+
+Username : prashant@techsture.com
+Password: pc2009
+
+4. Brijesh
+
+Username : 
+Password: 
+
+5. Rajni
+
+Username : rajni@techsture.com
+Password: 1234567
+
+6. Yvette:
+
+www.forrent.com/admin
+webuildtest
+2yvette
+
+my account yvettecochoa@gmail.com /
+2@Evelyn244440
+techdev / techdev123
+
+https://graph.facebook.com/oauth/authorize?type=web_server&client_id=271569939556112&redirect_uri=http://192.168.19.28:5061/scheduler.aspx&scope=offline_access,manage_pages,publish_stream,user_photos,user_photo_video_tags,photo_upload,user_videos,read_stream,email&display=popup
+
+https://graph.facebook.com/me?access_token=AAAD2ZCc3HZAxABAGYAeMAbaZCrgSBY3Fk0DkzSzNdPd9eN7UhcWBxCVdalRp2av6tkqM66jROzTy5roM19dWZCJl5BiveZApyt3QU0FLq4wZDZD
+

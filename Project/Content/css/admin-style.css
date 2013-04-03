@@ -1,0 +1,237 @@
+/* Standard Text */
+BODY {
+	background-color : #FFFFFF;
+
+}
+.input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	height: 20px;
+	border: 1px solid #D7D7D7;
+}
+a:link, a:active, a:visited  {
+	text-decoration: none;
+	color:#0B6FC5;
+
+}
+a:hover {
+	text-decoration: none;
+	color:#EA5E00;
+
+}
+.imgborder {
+	border-bottom:1px solid #7B8196;
+	border-right:1px solid #7B8196;
+	border-left:1px solid #A7ADC3;
+	border-top:1px solid #A7ADC3;
+	padding:1px;
+}
+td {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: none;
+}
+.activeTab
+{
+    background-color:#216B9E;
+    color:#ffffff;
+	border-bottom:1px solid #124060;
+	padding:3px;
+	padding-left:10px;
+	font-weight:bold;
+	background-position:right;
+	background-repeat:no-repeat;
+	background-image:url(images/active-arrow.gif);
+}
+.inactiveTab
+{
+    background-color:#ffffff;
+    color:#1C6293;
+	padding:3px;
+	padding-left:10px;
+	font-weight:bold;
+}
+.tahoma {
+	font-family: Tahoma;
+	font-size: 11px;
+	text-decoration: none;
+}
+
+.title
+{
+	color:#2A7CB4;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+A.white:link, A.white:visited, A.white:active {
+	font-family: arial;
+	font-size: 12px;
+	color: #FFF8AF;
+	text-decoration: none;
+}
+A.white:hover {
+	font-family: arial;
+	font-size: 12px;
+	color: #FFE900;
+	text-decoration: none;
+}
+.FormButton {
+	background-image: url(images/FormBut.gif);
+	background-repeat: repeat-x;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C7C7C7;
+	border-right-color: #828282;
+	border-bottom-color: #828282;
+	border-left-color: #C7C7C7;
+	background-position: center center;
+	height: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #363636;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	cursor:pointer;
+}
+.AdminFormButton {
+	FONT-SIZE: 12px;
+	background-color:#7E7E7E;
+	CURSOR: hand;
+	border-bottom:1px solid #484848;
+	border-right:1px solid #484848;
+	border-top:1px solid #ADADAD;
+	border-left:1px solid #ADADAD;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	TEXT-DECORATION: none;
+	font-weight: bold;
+	left: auto;
+	top: auto;
+	height: 20px;
+}
+.tdTitle {
+	background-image: url(images/tdTitle.gif);
+	background-repeat: repeat-x;
+	height: 26px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-weight:bold;
+	text-align:left;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:2px;
+	padding-right:2px;
+	border:1px solid #E0E0E0;
+}
+
+.currentPage
+{
+	font-size:11px;
+	color:#FFFFFF;
+	background-color:#A4A4A4;
+	padding:4px;
+	padding-bottom:1px;
+	text-align:center;
+	vertical-align:middle;
+}
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+.tdborder{
+	background-color:#F6F6F6;
+	border:1px solid #EAEAEA;
+	padding:8px;
+}
+table.chkRdoList input
+{
+	float: left;
+}
+table.chkRdoList label
+{
+	vertical-align:middle;
+	padding-top:2px;
+	display:block;	
+}
+td.chkRdoList input
+{
+	float:left;
+}
+td.chkRdoList label
+{
+	vertical-align:middle;
+	padding-top:3px;
+	display:block;	
+}
+.line
+{
+	padding:5px;
+}
+
+textarea 
+{
+	border: 1px solid #D7D7D7;
+}		
+.fometable {
+	background-color: #E9E9E9;
+}
+.fometitle {
+	background-color: #F7F7F7;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #276693;
+}
+.tdborder1 {
+	border: 1px solid #E9E9E9;
+}
+
+input[type="text"].UserName,
+input[type="password"].Password {
+   font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	height: 20px;
+	border: 1px solid #D7D7D7;
+}
+
+#divLoading
+{
+	z-index:1000000;
+}
+.loadingbg{
+	background-image:url(../content/adminimages/loading_bg.png); 
+	width:100px; 
+	height:107px;
+	background-repeat:no-repeat;
+	text-align:center;
+	vertical-align:middle;
+}
+.loadingtext{
+		color:#FFF;
+		font-family:arial;
+		font-size:12px;
+}

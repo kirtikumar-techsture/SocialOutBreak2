@@ -1,0 +1,339 @@
+// JavaScript Document
+                    $(document).ready(function() {
+						$('#txtActivationHour').timepicker({
+							showMinutes: false,
+							showLeadingZero: false,
+							showPeriodLabels: false,
+							//onHourShow: timepicker7OnHourShowCallback1,
+						});
+						$('#txtActivationMinute').timepicker({
+							showHours: false,
+							showMinutes: true,
+							showLeadingZero: false,
+							//onMinuteShow: timepicker7OnMinuteShowCallback1,
+						});
+                      
+                        $("#txtActivationDate").datepicker(
+							{minDate: new Date(), maxDate: null }
+						);	
+//                         $("#txtvideo").validate({
+//						  rules: {
+//							field: {
+//							  required: true,
+//							  url: true
+//							}
+//						  }
+//						});
+					})
+					function timepicker7OnHourShowCallback1(hour) {
+						var dTime = new Date();
+						var hours1 = dTime.getHours();
+						var minute1 = dTime.getMinutes();
+						if (minute1 > 30) 
+						{
+							hours1 = hours1 +1;
+						}
+						if ((hour < hours1)) {
+							return false;
+						}
+						return true;
+					}
+					function OpenCal(Id) {
+                        document.getElementById(Id).focus();
+                    }
+					function timepicker7OnMinuteShowCallback1(hour, minute) {
+						var dTime1 = new Date();
+
+						var minute1 = dTime1.getMinutes();
+						var hours1 = dTime1.getHours();
+						if (minute1 > 30) 
+							{
+								var diff=60-minute1;
+								var diff1=30-diff;
+								if (minute < diff1) {
+									return false;
+								}
+								else
+								{
+									return true;
+								}
+							}
+							else
+							{
+								if (minute < minute1+30) {
+									return false;
+								}
+								else
+								{
+									return true;
+								}
+							}
+					}
+    			 function ValidatePostNLeapData() {
+					var Title = "Fill in Following Information\n";
+					var fields = "";
+					if ($.trim($('#txtMessage').val()) == '') {
+						fields = fields + "\n-- Compose Message --";
+					}
+					if ($.trim($('#txtActivationDate').val()) == '') {
+						fields = fields + "\n-- Activation Date --";
+					}
+		
+					if ($.trim($('#selActivationHour').val()) == 0) {
+						fields = fields + "\n-- Activation Hour --";
+					}
+		
+					if ($.trim($('#selActivationMinute').val()) == 'Minute') {
+						fields = fields + "\n-- Activation Minute --";
+					}
+                    if ($.trim($('#selAMPM').val()) == 0) {
+						fields = fields + "\n-- AM/PM --";
+					}
+                    if ($('#ddlTimeZone').val() == "0") {
+						fields = fields + "\n-- TimeZone --";
+					}
+					if(selectedpages()==false)
+					{
+						fields = fields + "\n-- Fan page(s) --";
+					}
+                    selectedpageimage();
+                    selectedpagesName();
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+						return true;
+					}
+				}
+                 function ValidateQuickPost() {
+					//alert("test");
+					var Title = "Fill in Following Information\n";
+					var fields = "";
+					if ($.trim($('#txtMessage').val()) == '') {
+						fields = fields + "\n-- Compose Message --";
+					}
+                    selectedpageimage();
+                    selectedpagesName();
+                    if(selectedpages()==false)
+					{
+						fields = fields + "\n-- Fan page(s) --";
+					}
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+						return true;
+					}
+				}
+
+                
+				function Pageid(_this) {
+		
+				}
+				function selectedpages() {
+					var pages = '';
+                 	var hdnPages = '';
+					$('input[group^=pages]').each(
+						function () {
+							if ($(this).attr("checked") == 'checked') {
+								pages = pages + $(this).attr("pageid") + ','
+							}
+						}
+					);
+					if (pages != '') {
+                        $('#hdnPageId').val(pages);
+                        return true;
+					}
+					else
+					{
+						return false;
+					}
+                   
+				}
+                	
+              
+                function selectedpageimage() {
+                    var pageImage = '';
+					var hdnPages = '';
+					$('input[group^=pages]').each(
+						function () {
+							if ($(this).attr("checked") == 'checked') {
+								pageImage = pageImage + $(this).attr("pageimage") + ','
+							}
+						}
+					);
+					if (pageImage != '') {
+                        $('#hdnImage').val(pageImage);
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+                function selectedpagesName() {
+					var pages = '';
+					var hdnPages = '';
+					$('input[group^=pages]').each(
+						function () {
+							if ($(this).attr("checked") == 'checked') {
+								var pageid = $(this).attr("pageid")
+								pages = pages + $(this).attr("pagevalue") + "&nbsp;&nbsp;<a href='javascript:RemovePage(" + pageid + ")'>&nbsp;&nbsp;Remove</a><br/>"
+							}
+						}
+					);
+					if (pages != '') {
+						$('#divHtml').show("slow");
+						$('#divHtml').html("<strong>Selected Pages:</strong><br/><img src='http://ace:5061/content/images/remove.gif' width='8' height='8' />&nbsp;&nbsp;" + pages );
+						return true;
+					}
+					else
+					{
+						$('#divHtml').hide("slow");
+						$('#divHtml').html('');
+						return false;
+					}
+				}
+                
+				function RemovePage(pageid)
+				{
+				   $('input[group^=pages]').each(
+						function () {
+							if ($(this).attr("checked") == 'checked') {
+								var pageid1 = $(this).attr('pageid');
+								 if(pageid == pageid1)
+								 {
+								var id= $(this).attr('id');
+								 $("#" + id).removeAttr("checked");
+								 selectedpagesName();
+								 }
+							}
+						}
+					);	
+				
+					
+				}
+				
+			 function ValidateAlbum() {
+			
+					var Title = "Fill in Following Information\n";
+					var fields = "";
+                    if(selectedpages()==false)
+					{
+						fields = fields + "\n-- Fan page(s) --";
+					}
+					
+					 if ($.trim($('#photo').val()) == '') {
+						fields = fields + "\n-- Upload Photo --";
+					}
+                   
+                    selectedpagesAccessToken();
+                    selectedpageimage();
+                    selectedpagesName();
+                  
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+                    ShowProgress();
+						return true;
+					}
+				}
+				
+                function ValidatePublish() {
+					var Title = "Fill in Following Information\n";
+					var fields = "";
+                    if(selectedpages()==false)
+					{
+						fields = fields + "\n-- Fan page(s) --";
+					}
+                   
+                    selectedpagesAccessToken();
+                    selectedpageimage();
+                    selectedpagesName();
+                  
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+                    ShowProgress();
+						return true;
+					}
+				}
+
+                function ValidateVideoUpload() {
+                    var Title = "Fill in Following Information\n";
+					var fields = "";
+                    if(selectedpages()==false)
+					{
+						fields = fields + "\n-- Fan page(s) --";
+					}
+                    if ($.trim($('#photo').val()) == '') {
+						fields = fields + "\n-- Upload Photo/Video --";
+					}
+                    selectedpagesAccessToken();
+                    selectedpageimage();
+                    selectedpagesName();
+                  
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+                    //ShowProgress();
+						return true;
+					}
+				}
+		 function HideProgress() {
+                 parent.document.getElementById("imgLoading").style.display = 'none';
+        
+                }
+            function ShowProgress() {
+                         parent.document.getElementById("imgLoading").style.display = 'block';
+      
+                }
+
+  
+                function selectedpagesAccessToken() {
+					
+                    var pagesaccesstoken = '';
+					var hdnPages = '';
+					$('input[group^=pages]').each(
+						function () {
+							if ($(this).attr("checked") == 'checked') {
+							      pagesaccesstoken = pagesaccesstoken + $(this).attr("pageaccess_token") + ','
+							}
+						}
+					);
+				   
+                    if (pagesaccesstoken != '') {
+                        $('#hdnAccessToken').val(pagesaccesstoken);
+                        return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+                	 function ValidateDrafts() {
+			
+					var Title = "Fill in Following Information\n";
+					var fields = "";
+                    if ($.trim($('#txtMessage').val()) == '') {
+						fields = fields + "\n-- Compose Message --";
+					}
+                 
+					if (fields.length > 0) {
+						alert(Title + fields);
+						return false;
+					}
+					else {
+						return true;
+					}
+				    
+                    
+				}

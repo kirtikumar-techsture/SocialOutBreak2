@@ -1,0 +1,1 @@
+﻿$(document).ready(function(){$('.carousel').carousel({carouselWidth:500,carouselHeight:540,directionNav:true,shadow:true,buttonNav:'bullets'});});

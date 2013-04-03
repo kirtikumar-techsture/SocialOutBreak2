@@ -1,0 +1,31 @@
+#inheaderimg{
+	background-image:url(../images/travel_header_new.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:218px;
+	width:1002px;
+}
+
+.inheaderimg{
+	background-image:url(../images/travel_header.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	height:166px;
+	width:1002px;
+}
+
+.mainbg{
+	background-image:url(../images/travel_main_bg.jpg);
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-color:#FFF;
+	padding-top:15px;
+}
+
+.bannerimg{
+	background-image:url(../images/travel_banner.jpg);
+	background-position:top left;
+	background-repeat:no-repeat;
+	height:339px;
+	width:551px;
+}

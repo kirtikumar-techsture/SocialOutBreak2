@@ -1,0 +1,136 @@
+@charset "UTF-8";
+.TabbedPanels {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	clear: none;
+	width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+.TabbedPanelsTab {
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 8px 20px;
+	margin: 0px 0px 0px 5px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	background-color: #edeff4;
+	list-style: none;
+	border-left: solid 1px #d2d2d2;
+	border-bottom: solid 1px #d6d6d6;
+	border-top: solid 1px #d2d2d2;
+	border-right: solid 1px #d2d2d2;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+}
+.TabbedPanelsTab1Hover {
+	background-color: #d9dfed;
+}
+.TabbedPanelsTab1Selected {
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	color:#3b5998;
+	background-image:url(../images/tab_hover_bg1.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.TabbedPanelsTab1 a {
+	color: black;
+	text-decoration: none;
+}
+
+.TabbedPanelsTab1 {
+	position: relative;
+	top: 1px;
+	float: left;
+	padding: 8px 20px;
+	margin: 0px 0px 0px 5px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	background-color: #edeff4;
+	list-style: none;
+	border-left: solid 1px #d2d2d2;
+	border-top: solid 1px #d2d2d2;
+	border-right: solid 1px #d2d2d2;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+}
+.TabbedPanelsTab1Hover {
+	background-color: #d9dfed;
+}
+.TabbedPanelsTab1Selected{
+	background-color: #ffffff;
+	border-bottom: 1px solid #eeeeee;
+	color:#3b5998;
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.TabbedPanelsTab1 a {
+	color: black;
+	text-decoration: none;
+}
+
+
+
+
+
+
+.TabbedPanelsContentGroup {
+	clear: both;
+	border-top: solid 1px #d6d6d6;
+	background-color: #ffffff;
+	background-image:url(../images/tab_down.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+.TabbedPanelsContentGroup1 {
+	clear: both;
+	border-top: solid 1px #d6d6d6;
+	background-color: #ffffff;
+	background-position:top;
+	background-repeat:repeat-x;
+	border-bottom:1px solid #d6d6d6;
+	border-left:1px solid #d6d6d6;
+	border-right:1px solid #d6d6d6;
+}
+.TabbedPanelsContent {
+	padding: 15px;
+}
+.TabbedPanelsContent1 {
+	padding: 15px;
+	}
+.TabbedPanelsContentVisible {
+}
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #999;
+	border-right: solid 1px #999;
+}
+.VTabbedPanels .TabbedPanelsTab .TabbedPanelsTab1 {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+.VTabbedPanels .TabbedPanelsTabSelected  .TabbedPanelsTab1Selected{
+	background-color: #ffffff;
+	border-bottom: solid 1px #999;
+}
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}
